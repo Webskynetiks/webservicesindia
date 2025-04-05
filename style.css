@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Apply Roboto font to all elements */
+html, body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Ensure all elements inherit the font */
+* {
+    font-family: inherit;
+}
+
+/* Font weight classes */
+.font-light {
+    font-weight: 300;
+}
+
+.font-regular {
+    font-weight: 400;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.testimonial-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: 18%;
+}
+
+.bg-gradient {
+    background: linear-gradient(135deg, #4A1FCF 20%, #582CE8 80%);
+}
+
+.group/submenu:hover > ul {
+    display: block;
+}
+
+.group/submenu > ul {
+    transition: all 0.3s ease;
+}
+
+/* Dropdown styles */
+.group/submenu {
+    position: relative;
+}
+
+.group/submenu > ul {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    min-width: 200px;
+    z-index: 50;
+}
+
+.group/submenu:hover > ul {
+    display: block !important;
+}
+
+/* Animation for dropdowns */
+.dropdown-animation {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.dropdown-animation.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+/* Dropdown styles */
+.submenu-parent:hover > .submenu {
+    display: block !important;
+}
+
+.submenu {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    display: none;
+    min-width: 200px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 0.375rem;
+    z-index: 60;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.2s ease-in-out forwards;
+}
+
+/* Mobile menu transitions */
+#mobile-dropdown {
+    transition: all 0.3s ease-in-out;
+}
+
+.mobile-submenu-btn + ul {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Mobile submenu styles */
+.mobile-submenu-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.submenu-parent {
+    position: relative;
+}
+
+
+
+/* Add explicit styles for the main services dropdown */
+#services-dropdown {
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
