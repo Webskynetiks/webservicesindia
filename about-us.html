@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </head>
 
 <body class="bg-gray-50 text-gray-800">
@@ -204,15 +207,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <!-- <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
-        <div class="container mx-auto px-6 py-20 text-center">
-            <h1 class="text-5xl font-bold mb-4">About Web Services India</h1>
-            <p class="text-xl max-w-2xl mx-auto">We are honoured as the leading web designing company in the region and thus offer superior quality work to our clients. We are set up with an objective to make our customers happy and thus offer an exclusive collection of professional websites to them</p>
-            <p>A company is nothing without its team and so we have employed the best minds of the industry. Our professionals are highly skilled and experienced and thus know how to meet client’s needs and demands. Our team is dedicated towards excellence and reliability so we offer high quality websites to the clients to achieve particular goal in their respective fields.</p>
-        <p>Since our Inauguration, we have been offering outstanding website to our clients. We have earned a huge reputation in this field of design and development and thus highly appreciated among our customers for our priceless quality. We are committed to offer the best quality website to our esteemed clients in different fields.</p>
-        </div>
-    </header> -->
+
 
     <!-- Our Story Section -->
     <section class="py-16">
@@ -220,15 +215,18 @@
             <div class="flex flex-col md:flex-row items-center gap-12">
                 <div class="md:w-1/2">
                     <h2 class="text-3xl font-bold mb-6">Our Story</h2>
-                    <p class="text-gray-600 mb-4">Founded in 2010, Web Services India began with a simple mission: to
+                    <p class="text-grey-800 font-bold mb-4">Founded in 2010, Web Services India began with a simple
+                        mission: to
                         help businesses thrive in the digital world. What started as a small team of passionate
                         developers has grown into a comprehensive digital agency trusted by companies across India and
                         beyond.</p>
-                    <p class="text-gray-600 mb-4">Over the years, we've expanded our services to cover all aspects of
+                    <p class="text-gray-800 mb-4 font-bold">Over the years, we've expanded our services to cover all
+                        aspects of
                         the digital landscape while maintaining our commitment to quality, innovation, and client
                         satisfaction. Our journey has been defined by continuous learning and adaptation to the
                         ever-evolving digital environment.</p>
-                    <p class="text-gray-600">Today, we're proud to be the digital partner of choice for startups,
+                    <p class="text-gray-800 font-bold">Today, we're proud to be the digital partner of choice for
+                        startups,
                         established businesses, and enterprises looking to make their mark online.</p>
                 </div>
                 <div class="md:w-1/2">
@@ -239,45 +237,103 @@
         </div>
     </section>
 
+    <section class="bg-gray-100 py-12 px-6 md:px-16">
+        <div class="container mx-auto flex flex-col md:flex-row items-center gap-12">
+
+            <!-- Left Image -->
+            <div class="md:w-1/2">
+                <img src="Images/digital-marketing.webp" alt="Creating Smart Future"
+                    class="w-full max-w-md mx-auto rounded-lg shadow-lg">
+            </div>
+
+            <!-- Right Content -->
+            <div class="md:w-1/2">
+                <!-- Heading -->
+                <h2 class="text-4xl font-extrabold text-gray-900">
+                    <span class="text-black">What </span><span class="text-green-600">We Do?</span>
+                </h2>
+                <div class="w-20 h-1 bg-yellow-400 mt-2 mb-6"></div>
+
+                <!-- Paragraph -->
+                <p class="text-gray-800 font-bold text-justify">
+                    Web Solutions, located in Noida, Uttar Pradesh, is a comprehensive digital agency offering a wide
+                    range of services including website design and development, graphic design, SEO, SMO, content
+                    writing, and e-commerce solutions. They specialize in creating responsive, user-friendly websites
+                    and visually appealing branding materials like logos and brochures. Their digital marketing services
+                    focus on improving search engine rankings and enhancing brand visibility across social media
+                    platforms. Additionally, they develop customized online stores with secure payment integration. With
+                    a commitment to quality and results, Shrishti Softech helps businesses establish a strong online
+                    presence and achieve their growth objectives.
+                    <!-- <p class="text-gray-600 leading-relaxed mt-4">
+              From marketing events like Auto Expo - Components and MTV Unplugged to creating some incredible ROAS (Return on ad spends) for eCommerce brands, our team loves to be creative and strategic about different lines of businesses. We won the 'Best Digital Innovation' award at the ACT summit in Pune, where our digital activation campaign for ACMA Safer Workplaces won accolades from auto component OEMs. We are hungry for creativity and passionate about driving results. Our clients below can attest to our efforts!
+            </p> -->
+            </div>
+
+        </div>
+    </section>
+
+
     <!-- Mission & Values -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12">Our Mission & Values</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-lg shadow-md transition-transform duration-300 hover:scale-105">
-                    <div class="text-blue-600 mb-4">
-                        <i class="fas fa-bullseye text-4xl"></i>
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 lg:px-20">
+            <!-- Section Header -->
+            <h2 class="text-4xl font-extrabold text-center text-gray-800 mb-4">Our Mission & Values</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">
+                Discover what drives us and how our principles shape the digital experiences we create.
+            </p>
+
+            <!-- Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <!-- Mission Card -->
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.03] border-t-4 border-blue-600">
+                    <div class="text-blue-600 mb-5 text-center">
+                        <i class="fas fa-bullseye text-5xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Our Mission</h3>
-                    <p class="text-gray-600">To empower businesses with innovative digital solutions that drive growth,
-                        enhance visibility, and create meaningful connections with their audience.</p>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800 text-center">Our Goal</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Our primary aim is to stick with our commitments which we have done with our clients. Our target
+                        is to never break our commitments at any cost. We think our commitments are our strength. We
+                        handover the completed projects to our clients with their satisfaction. </p>
                 </div>
-                <div class="bg-white p-8 rounded-lg shadow-md transition-transform duration-300 hover:scale-105">
-                    <div class="text-blue-600 mb-4">
-                        <i class="fas fa-eye text-4xl"></i>
+
+                <!-- Vision Card -->
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.03] border-t-4 border-green-500">
+                    <div class="text-green-500 mb-5 text-center">
+                        <i class="fas fa-eye text-5xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Our Vision</h3>
-                    <p class="text-gray-600">To be the leading digital transformation partner for businesses, known for
-                        our expertise, reliability, and forward-thinking approach to digital challenges.</p>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800 text-center">Our Vision</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        To be the leading digital transformation partner for businesses, known for our expertise,
+                        reliability, and forward-thinking approach to digital challenges.
+                    </p>
                 </div>
-                <div class="bg-white p-8 rounded-lg shadow-md transition-transform duration-300 hover:scale-105">
-                    <div class="text-blue-600 mb-4">
-                        <i class="fas fa-heart text-4xl"></i>
+
+                <!-- Values Card -->
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.03] border-t-4 border-pink-500">
+                    <div class="text-pink-500 mb-5 text-center">
+                        <i class="fas fa-heart text-5xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Our Values</h3>
-                    <p class="text-gray-600">We believe in excellence, innovation, integrity, collaboration, and
-                        client-centricity as the guiding principles that define our work and relationships.</p>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800 text-center">Our Values</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        We believe in excellence, innovation, integrity, collaboration, and client-centricity as the
+                        guiding principles that define our work and relationships.
+                    </p>
                 </div>
+
             </div>
         </div>
     </section>
 
+
     <!-- Our Team -->
-    <section class="py-16">
+    <!-- <section class="py-16">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-12">Meet Our Team</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Team Member 1 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-md">
                     <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"
                         alt="Team member" class="w-full h-64 object-cover">
@@ -288,7 +344,6 @@
                             development, Rajesh leads our strategic vision.</p>
                     </div>
                 </div>
-                <!-- Team Member 2 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-md">
                     <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=988&q=80"
                         alt="Team member" class="w-full h-64 object-cover">
@@ -299,7 +354,6 @@
                             designs are both beautiful and functional.</p>
                     </div>
                 </div>
-                <!-- Team Member 3 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-md">
                     <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"
                         alt="Team member" class="w-full h-64 object-cover">
@@ -310,7 +364,6 @@
                             robust and scalable solutions.</p>
                     </div>
                 </div>
-                <!-- Team Member 4 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-md">
                     <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1061&q=80"
                         alt="Team member" class="w-full h-64 object-cover">
@@ -323,83 +376,102 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Why Choose Us -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12">Why Choose Us</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="flex gap-4">
-                    <div class="text-blue-600 mt-1">
-                        <i class="fas fa-check-circle text-2xl"></i>
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 lg:px-20">
+            <!-- Section Heading -->
+            <h2 class="text-4xl font-extrabold text-center text-gray-800 mb-4">Why Choose Us</h2>
+            <p class="text-center text-gray-500 max-w-xl mx-auto mb-12">
+                Discover the key reasons businesses trust us to elevate their digital success.
+            </p>
+
+            <!-- Grid of Benefits -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <!-- Feature Card -->
+                <div class="flex items-start space-x-4 hover:bg-gray-50 p-4 rounded-xl transition-all duration-300">
+                    <div class="text-green-500 mt-1">
+                        <i class="fas fa-check-circle text-3xl"></i>
                     </div>
                     <div>
-                        <h3 class="text-xl font-bold mb-2">Expert Team</h3>
-                        <p class="text-gray-600">Our team consists of industry experts with years of experience in their
-                            respective fields.</p>
+                        <h3 class="text-xl font-semibold mb-1 text-gray-800">Expert Team</h3>
+                        <p class="text-gray-600">Industry professionals with deep experience across sectors and digital
+                            expertise.</p>
                     </div>
                 </div>
-                <div class="flex gap-4">
-                    <div class="text-blue-600 mt-1">
-                        <i class="fas fa-check-circle text-2xl"></i>
+
+                <div class="flex items-start space-x-4 hover:bg-gray-50 p-4 rounded-xl transition-all duration-300">
+                    <div class="text-green-500 mt-1">
+                        <i class="fas fa-check-circle text-3xl"></i>
                     </div>
                     <div>
-                        <h3 class="text-xl font-bold mb-2">Customized Solutions</h3>
-                        <p class="text-gray-600">We tailor our services to meet your specific business needs and
-                            objectives.</p>
+                        <h3 class="text-xl font-semibold mb-1 text-gray-800">Customized Solutions</h3>
+                        <p class="text-gray-600">Every strategy we craft is tailored to your business goals and unique
+                            challenges.</p>
                     </div>
                 </div>
-                <div class="flex gap-4">
-                    <div class="text-blue-600 mt-1">
-                        <i class="fas fa-check-circle text-2xl"></i>
+
+                <div class="flex items-start space-x-4 hover:bg-gray-50 p-4 rounded-xl transition-all duration-300">
+                    <div class="text-green-500 mt-1">
+                        <i class="fas fa-check-circle text-3xl"></i>
                     </div>
                     <div>
-                        <h3 class="text-xl font-bold mb-2">End-to-End Services</h3>
-                        <p class="text-gray-600">From strategy to implementation, we cover all aspects of your digital
+                        <h3 class="text-xl font-semibold mb-1 text-gray-800">End-to-End Services</h3>
+                        <p class="text-gray-600">From ideation to launch, we manage your entire digital transformation
                             journey.</p>
                     </div>
                 </div>
-                <div class="flex gap-4">
-                    <div class="text-blue-600 mt-1">
-                        <i class="fas fa-check-circle text-2xl"></i>
+
+                <div class="flex items-start space-x-4 hover:bg-gray-50 p-4 rounded-xl transition-all duration-300">
+                    <div class="text-green-500 mt-1">
+                        <i class="fas fa-check-circle text-3xl"></i>
                     </div>
                     <div>
-                        <h3 class="text-xl font-bold mb-2">Result-Driven Approach</h3>
-                        <p class="text-gray-600">We focus on delivering tangible results that contribute to your
-                            business growth.</p>
+                        <h3 class="text-xl font-semibold mb-1 text-gray-800">Result-Driven Approach</h3>
+                        <p class="text-gray-600">We focus on KPIs that matter and drive measurable growth and ROI.</p>
                     </div>
                 </div>
-                <div class="flex gap-4">
-                    <div class="text-blue-600 mt-1">
-                        <i class="fas fa-check-circle text-2xl"></i>
+
+                <div class="flex items-start space-x-4 hover:bg-gray-50 p-4 rounded-xl transition-all duration-300">
+                    <div class="text-green-500 mt-1">
+                        <i class="fas fa-check-circle text-3xl"></i>
                     </div>
                     <div>
-                        <h3 class="text-xl font-bold mb-2">Timely Delivery</h3>
-                        <p class="text-gray-600">We respect deadlines and ensure your projects are completed on time.
+                        <h3 class="text-xl font-semibold mb-1 text-gray-800">Timely Delivery</h3>
+                        <p class="text-gray-600">We’re deadline-driven and always on schedule with structured planning.
                         </p>
                     </div>
                 </div>
-                <div class="flex gap-4">
-                    <div class="text-blue-600 mt-1">
-                        <i class="fas fa-check-circle text-2xl"></i>
+
+                <div class="flex items-start space-x-4 hover:bg-gray-50 p-4 rounded-xl transition-all duration-300">
+                    <div class="text-green-500 mt-1">
+                        <i class="fas fa-check-circle text-3xl"></i>
                     </div>
                     <div>
-                        <h3 class="text-xl font-bold mb-2">Ongoing Support</h3>
-                        <p class="text-gray-600">Our relationship doesn't end with project delivery. We provide
-                            continued support.</p>
+                        <h3 class="text-xl font-semibold mb-1 text-gray-800">Ongoing Support</h3>
+                        <p class="text-gray-600">Beyond delivery, we provide ongoing support and maintenance you can
+                            rely on.</p>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Client Testimonials -->
-    <section class="py-16">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-lg shadow-md">
+
+
+
+    <!-- Testimonials Section -->
+    <section class="py-12 text-center">
+        <h2 class="text-3xl font-bold text-gray-900">What Our Cients Says</h2>
+        <p class="text-gray-600 mt-2">Hear from our satisfied customers about their experiences with our services.</p>
+
+        <div class="mt-10 container mx-auto px-6">
+            <div class="owl-carousel owl-theme">
+
+                <div class="bg-[#f0f6ff] p-8 rounded-lg shadow-md">
                     <div class="text-yellow-400 flex mb-4">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -411,14 +483,17 @@
                         Their team understood our requirements perfectly and delivered a website that exceeded our
                         expectations."</p>
                     <div class="flex items-center">
-                        <div class="w-12 h-12 rounded-full bg-gray-300 mr-4"></div>
+                        <div class="w-12 h-12 rounded-full bg-gray-300 mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt=""
+                                class="w-full h-full rounded-full">
+                        </div>
                         <div>
                             <h4 class="font-bold">Amit Patel</h4>
                             <p class="text-sm text-gray-500">CEO, TechStart Solutions</p>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white p-8 rounded-lg shadow-md">
+                <div class="bg-[#f0f6ff] p-8 rounded-lg shadow-md">
                     <div class="text-yellow-400 flex mb-4">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -430,14 +505,17 @@
                         visibility and lead generation. We've seen a 200% increase in organic traffic within just six
                         months."</p>
                     <div class="flex items-center">
-                        <div class="w-12 h-12 rounded-full bg-gray-300 mr-4"></div>
+                        <div class="w-12 h-12 rounded-full bg-gray-300 mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt=""
+                                class="w-full h-full rounded-full">
+                        </div>
                         <div>
                             <h4 class="font-bold">Sunita Sharma</h4>
                             <p class="text-sm text-gray-500">Marketing Manager, Global Retail</p>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white p-8 rounded-lg shadow-md">
+                <div class="bg-[#f0f6ff] p-8 rounded-lg shadow-md">
                     <div class="text-yellow-400 flex mb-4">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -449,13 +527,17 @@
                         user-friendly, and has helped us increase our online sales by 150%. Their ongoing support is
                         exceptional."</p>
                     <div class="flex items-center">
-                        <div class="w-12 h-12 rounded-full bg-gray-300 mr-4"></div>
+                        <div class="w-12 h-12 rounded-full bg-gray-300 mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/42.jpg" alt=""
+                                class="w-full h-full rounded-full">
+                        </div>
                         <div>
                             <h4 class="font-bold">Rahul Mehta</h4>
                             <p class="text-sm text-gray-500">Founder, Fashion Forward</p>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -467,10 +549,11 @@
             <p class="text-xl max-w-2xl mx-auto mb-8">Let's discuss how we can help your business grow in the digital
                 landscape.</p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#"
-                    class="bg-white text-blue-600 font-bold py-3 px-8 rounded-md hover:bg-gray-100 transition">Get a
-                    Free Quote</a>
-                <a href="#"
+                <a href="tel:+919212378780"
+                    class="bg-white text-blue-600 font-bold py-3 px-8 rounded-md hover:bg-gray-100 transition">
+                    Get a Free Quote
+                </a>
+                <a href="contact-us.html"
                     class="border-2 border-white text-white font-bold py-3 px-8 rounded-md hover:bg-white hover:text-blue-600 transition">Contact
                     Us</a>
             </div>
@@ -478,62 +561,101 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Web Services India</h3>
-                    <p class="text-gray-400">Transforming businesses through innovative digital solutions since 2010.
-                    </p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Contact</h3>
-                    <p class="text-gray-400 mb-2"><i class="fas fa-map-marker-alt mr-2"></i> 123 Tech Park, Delhi, India
-                    </p>
-                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2"></i> +91 9212378780</p>
-                    <p class="text-gray-400"><i class="fas fa-envelope mr-2"></i> info@webservicesindia.com</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
-                    <ul class="text-gray-400">
-                        <li class="mb-2"><a href="#" class="hover:text-white">Home</a></li>
-                        <li class="mb-2"><a href="#" class="hover:text-white">About Us</a></li>
-                        <li class="mb-2"><a href="#" class="hover:text-white">Services</a></li>
-                        <li class="mb-2"><a href="#" class="hover:text-white">Portfolio</a></li>
-                        <li><a href="#" class="hover:text-white">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
-                    <div class="flex space-x-4">
-                        <a href="#"
-                            class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-600 transition"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a href="#"
-                            class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-400 transition"><i
-                                class="fab fa-twitter"></i></a>
-                        <a href="#"
-                            class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-pink-600 transition"><i
-                                class="fab fa-instagram"></i></a>
-                        <a href="#"
-                            class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-800 transition"><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <p class="text-gray-400 mt-4">Subscribe to our newsletter</p>
-                    <div class="flex mt-2">
-                        <input type="email" placeholder="Your email"
-                            class="bg-gray-700 text-white px-4 py-2 rounded-l-md focus:outline-none w-full">
-                        <button
-                            class="bg-blue-600 px-4 py-2 rounded-r-md hover:bg-blue-700 transition">Subscribe</button>
-                    </div>
+    <footer class="footer-bg text-gray-300 py-10 px-6 bg-[#001f23]">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+
+            <!-- About Company -->
+            <div>
+                <h3 class="text-teal-400 font-semibold text-2xl">Web Solutions</h3>
+                <p class="mt-2 text-sm">
+                    We are honoured as the leading web designing company in the region and
+                    thus offer superior quality work to our clients.
+                </p>
+                <a href="about-us.html" class="text-teal-300 mt-2 inline-block text-sm hover:text-teal-500">Read
+                    More</a>
+            </div>
+            <!-- Company Links -->
+            <div>
+                <h3 class="text-teal-400 font-semibold text-lg">Quick Links</h3>
+                <ul class="mt-2 space-y-2 text-sm">
+                    <li>→ <a href="#" class="hover:text-teal-500">Home</a></li>
+                    <li>→ <a href="#" class="hover:text-teal-500">About Us</a></li>
+                    <li>→ <a href="#" class="hover:text-teal-500">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Our Services -->
+            <div>
+                <h3 class="text-teal-400 font-semibold text-lg">Our Services</h3>
+                <ul class="mt-2 space-y-2 text-sm">
+                    <li>→ <a href="#" class="hover:text-teal-500">Website Designing</a></li>
+                    <li>→ <a href="#" class="hover:text-teal-500">Website Development</a></li>
+                    <li>→ <a href="#" class="hover:text-teal-500">Graphic Designing</a></li>
+                    <li>→ <a href="#" class="hover:text-teal-500">Search Engine Optimization</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Contact Information -->
+            <div>
+                <h3 class="text-teal-400 font-semibold text-lg">Contact Us</h3>
+                <ul class="mt-2 space-y-2 text-sm">
+                    <li>🏠 B-609, Logix Technova, Sec-132, Noida, (UP) 201304, India</li>
+                    <li>📞 +91 120 4310900</li>
+                    <li>📱 +91 92 123 78780</li>
+                    <li>📧 <a href="mailto:enquiry@ssi.bz" class="hover:text-teal-500">enquiry@ssi.bz</a></li>
+                </ul>
+                <!-- Social Icons -->
+                <div class="flex space-x-3 mt-4">
+                    <a href="#" class="bg-gray-600 p-2 rounded-full hover:bg-teal-500 transition">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="w-4 h-4">
+                    </a>
+                    <a href="#" class="bg-gray-600 p-2 rounded-full hover:bg-teal-500 transition">
+                        <img src="https://cdn-icons-png.flaticon.com/512/145/145808.png" alt="Pinterest"
+                            class="w-4 h-4">
+                    </a>
+                    <a href="#" class="bg-gray-600 p-2 rounded-full hover:bg-teal-500 transition">
+                        <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" class="w-4 h-4">
+                    </a>
                 </div>
             </div>
-            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
-                <p>© 2023 Web Services India. All rights reserved.</p>
-            </div>
+
+        </div>
+
+        <!-- Bottom Footer -->
+        <div
+            class="mt-10 border-t border-gray-500 pt-4 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
+            <p>© Copyright 2025 <a href="https://skynetiks.com/" target="_blank"> <span
+                        class="hover:underline">Skynetiks Technologies.</span></a> All Rights Reserved.</p>
+            <a href="#" class="bg-teal-500 hover:bg-teal-600 text-white p-2 rounded-full transition">
+                ⬆️
+            </a>
         </div>
     </footer>
     <scipt src="main.js"></scipt>
+    <!-- jQuery & Owl Carousel Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Owl Carousel Initialization -->
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: false,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                responsive: {
+                    0: { items: 1 },
+                    768: { items: 2 },
+                    1024: { items: 3 }
+                }
+            });
+        });
+    </script>
+
 </body>
 
 </html>
