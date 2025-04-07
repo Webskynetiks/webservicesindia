@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
+    <title> Web Services India</title>
+    <link rel="icon" type="image/x-icon" href="Images/favicon.png">
+    <meta name="description"
+        content="Web Services India is a leading SEO and digital marketing agency that specializes in providing customized SEO and digital marketing solutions to help your business achieve top rankings and high-quality traffic.">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">    
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+
+    <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
 
-   
+    <!-- Navbar -->
     <!-- Navigation Bar -->
     <nav class="bg-white shadow-md z-50 border-b-2 border-purple-600 relative">
         <div class="container mx-auto px-4 py-5 flex justify-between items-center">
@@ -24,17 +39,17 @@
                     <img src="/Images/logo.webp" alt="Logo" class="h-10">
                 </a>
             </div>
-    
+
             <!-- Menu Button for Mobile -->
             <button id="menu-btn" class="lg:hidden text-gray-600 focus:outline-none">
                 <i class="fa-solid fa-bars text-2xl"></i>
             </button>
-    
+
             <!-- Navigation Links -->
             <ul id="menu" class="hidden lg:flex space-x-6 text-gray-700 text-xl font-bold">
                 <li><a href="/" class="hover:text-purple-600">Home</a></li>
                 <li><a href="/about-us.html" class="hover:text-purple-600">About</a></li>
-    
+
                 <!-- Services Dropdown -->
                 <li class="relative group">
                     <button id="services-btn" class="hover:text-purple-600 flex items-center">
@@ -44,7 +59,7 @@
                             </path>
                         </svg>
                     </button>
-    
+
                     <ul id="services-dropdown"
                         class="absolute left-0 hidden bg-white shadow-lg min-w-[200px] mt-2 rounded-md z-50 border border-gray-200 text-sm fade-in">
                         <li class="relative submenu-parent">
@@ -133,25 +148,25 @@
                         </li>
                     </ul>
                 </li>
-    
+
                 <li><a href="/packages.html" class="hover:text-purple-600">Packages</a></li>
                 <li><a href="/contact-us.html" class="hover:text-purple-600">Contact Us</a></li>
             </ul>
-    
+
             <!-- Free Consultation Button -->
             <a href="tel:+919212378780"
                 class="hidden lg:inline-block bg-purple-600 text-white px-5 py-2 rounded-full hover:bg-purple-700 transition text-xl">
                 Free Consultation <i class="fa-solid fa-headset"></i>
             </a>
         </div>
-    
+
         <!-- Mobile Menu -->
         <div id="mobile-menu"
             class="hidden lg:hidden absolute top-16 left-0 w-full bg-white shadow-lg border-t border-purple-600">
             <ul class="flex flex-col space-y-4 py-4 px-6 text-gray-700 text-lg font-bold">
                 <li><a href="/" class="hover:text-purple-600">Home</a></li>
                 <li><a href="/about-us.html" class="hover:text-purple-600">About</a></li>
-    
+
                 <!-- Services Dropdown for Mobile -->
                 <li>
                     <button id="mobile-dropdown-btn" class="hover:text-purple-600 flex items-center w-full text-left">
@@ -186,7 +201,7 @@
                                         class="block px-4 py-2  whitespace-nowrap">Banner Design</a></li>
                             </ul>
                         </li>
-    
+
                         <!-- Development Submenu -->
                         <li class="relative">
                             <button class="mobile-submenu-btn w-full px-4 py-2  flex justify-between items-center">
@@ -214,7 +229,7 @@
                                 </li>
                             </ul>
                         </li>
-    
+
                         <!-- Digital Marketing Submenu -->
                         <li class="relative">
                             <button class="mobile-submenu-btn w-full px-4 py-2  flex justify-between items-center">
@@ -237,134 +252,117 @@
                         </li>
                     </ul>
                 </li>
-    
+
                 <li><a href="/packages.html" class="hover:text-purple-600">Packages</a></li>
                 <li><a href="/contact-us.html" class="hover:text-purple-600">Contact Us</a></li>
             </ul>
         </div>
     </nav>
-    <div class="relative w-full h-[50vh]">
-        <img src="Images/contact-image.webp" alt="contact-image" class="w-full h-full object-cover">
-        <div class="absolute inset-0 flex flex-col justify-center items-center px-4 text-center">
-            <h1 class="text-white text-3xl sm:text-4xl md:text-5xl font-bold mb-2">Contact Us</h1>
-            <p class="text-white text-base sm:text-lg md:text-xl">If you have any query, feel free to contact us</p>
+
+
+
+    <section class="bg-blue-50 py-16">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+            <!-- Service Card -->
+            <a href="/services/design/website-design.html" class="block">
+            <div class="bg-white p-6 text-center rounded-md shadow hover:shadow-md transition hover:border-2 border-blue-400"  >
+              <div class="flex justify-center mb-4">
+                <div class="bg-cyan-500 transform rotate-45 w-10 h-10 flex items-center justify-center">
+                  <svg class="-rotate-45 w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                    <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">Website Design</h3>
+              <p class="text-sm text-gray-600">At Web Services India, we craft captivating websites that elevate your brand's online presence. Our expert designers create stunning, responsive layouts that engage visitors and drive conversions while ensuring seamless functionality across all devices.</p>
+            </div>
+            </a>
+      
+            <!-- Repeat Cards Below -->
+            <a href="/services/design/website-redesign.html" class="block">
+            <div class="bg-white p-6 text-center rounded-md shadow hover:shadow-md transition hover:border-2 border-blue-400">
+              <div class="flex justify-center mb-4">
+                <div class="bg-cyan-500 transform rotate-45 w-10 h-10 flex items-center justify-center">
+                  <svg class="-rotate-45 w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                    <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">Website Redesign</h3>
+              <p class="text-sm text-gray-600">Revitalize your digital presence with our website redesign services. We transform outdated sites into modern, user-friendly experiences that improve engagement, navigation, and conversion rates, all while preserving your brand identity and SEO value.</p>
+            </div>
+            </a>
+      
+            
+      
+            <a href="/services/design/landing-page.html" class="block">
+            <div class="bg-white p-6 text-center rounded-md shadow hover:shadow-md transition hover:border-2 border-blue-400">
+              <div class="flex justify-center mb-4">
+                <div class="bg-cyan-500 transform rotate-45 w-10 h-10 flex items-center justify-center">
+                  <svg class="-rotate-45 w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                    <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">Landing Page</h3>
+              <p class="text-sm text-gray-600">We design high-converting landing pages focused on specific campaigns and goals. Our strategic designs incorporate persuasive elements, compelling CTAs, and optimized user flows to maximize conversion rates and deliver measurable ROI for your marketing campaigns.</p>
+            </div>
+            </a>
+
+            <a href="/services/design/logo-design.html" class="block">
+                <div class="bg-white p-6 text-center rounded-md shadow hover:shadow-md transition hover:border-2 border-blue-400">
+          <div class="flex justify-center mb-4">
+            <div class="bg-cyan-500 transform rotate-45 w-10 h-10 flex items-center justify-center">
+              <svg class="-rotate-45 w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Logo Design</h3>
+          <p class="text-sm text-gray-600">Our creative team develops distinctive logos that capture your brand's essence and values. We deliver memorable, versatile designs that work seamlessly across all platforms and leave a lasting impression on your audience, helping establish strong brand recognition.</p>
         </div>
-    </div>
-    
-    
-    <section class="bg-white py-20">
-        <div class="container mx-auto px-6">
-          <!-- Header -->
-          <div class="text-center mb-12">
-            <h5 class="text-blue-600 uppercase font-semibold">Contact Us</h5>
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mt-2">
-              If You Have Any Query, Feel Free To Contact Us
-            </h2>
-          </div>
+        </a>
       
-          <!-- Top Contact Info -->
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 text-center">
-            <!-- Call -->
-            <div class="flex flex-col items-center">
-              <div class="text-white bg-blue-500 px-4 py-3 rounded-full mb-3">
-                <i class="fas fa-phone "></i>
+            <a href="/services/design/brochure-design.html" class="block">
+            <div class="bg-white p-6 text-center rounded-md shadow hover:shadow-md transition hover:border-2 border-blue-400">
+              <div class="flex justify-center mb-4">
+                <div class="bg-cyan-500 transform rotate-45 w-10 h-10 flex items-center justify-center">
+                  <svg class="-rotate-45 w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                    <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
               </div>
-              <p class="font-medium">Call to ask any question</p>
-              <a href="tel:+91  9212378780" class="text-blue-600 mt-1">+ 91 9212378780</a>
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">Brochure Designing</h3>
+              <p class="text-sm text-gray-600">Our professional brochure designs effectively communicate your value proposition through visually appealing layouts and compelling content. We create informative, branded materials that showcase your products or services and serve as powerful marketing tools both online and in print.</p>
             </div>
+            </a>
       
-            <!-- Email -->
-            <div class="flex flex-col items-center">
-              <div class="text-white bg-blue-500 px-4 py-3 rounded-full mb-3">
-                <i class="fas fa-envelope text-xl"></i>
+            <a href="/services/design/banner-design.html" class="block">
+            <div class="bg-white p-6 text-center rounded-md shadow hover:shadow-md transition hover:border-2 border-blue-400">
+              <div class="flex justify-center mb-4">
+                <div class="bg-cyan-500 transform rotate-45 w-10 h-10 flex items-center justify-center">
+                  <svg class="-rotate-45 w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                    <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
               </div>
-              <p class="font-medium">Email to get free quote</p>
-              <a href="mailto: enquiry@ssi.bz " class="text-blue-600 mt-1"> enquiry@ssi.bz </a>
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">Banner Designing</h3>
+              <p class="text-sm text-gray-600">We create eye-catching digital banners that grab attention and drive action. Our designs incorporate strategic messaging, compelling visuals, and clear CTAs to boost click-through rates for your digital advertising campaigns across websites, social media, and other online platforms.</p>
             </div>
+            </a>
       
-            <!-- Office -->
-            <div class="flex flex-col items-center">
-                <div class="text-white bg-blue-500 px-4 py-3 rounded-full mb-3">
-                    <i class="fas fa-map-marker-alt text-xl"></i>
-              </div>
-              <p class="font-medium">Office</p>
-              <a href="#" class="text-blue-600 mt-1 text-sm leading-5 text-center">
-                 <span class="font-bold text-black">Skynetiks Technologies</span><br>
-                B-609, Logix Technova, Sec-132, Noida, (UP) 201304, India
-              </a>
-            </div>
-          </div>
-      
-          <!-- Form + Map -->
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-            <!-- Contact Form -->
-            <form class="space-y-4">
-              <input type="text" placeholder="Your Name" class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
-              <input type="email" placeholder="Your Email" class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
-              <input type="text" placeholder="Enter Your Number" class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
-              <select class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <option>Select A Service</option>
-                <option>Web Development</option>
-                <option>App Development</option>
-                <option>Digital Marketing</option>
-                <option>UI/UX Design</option>
-              </select>
-              <input type="text" placeholder="Your Company Name" class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
-              <textarea rows="4" placeholder="Message" class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-              <button type="submit" class="bg-blue-900 text-white px-6 py-3 rounded hover:bg-blue-800 transition-all">
-                Request A Quote
-              </button>
-            </form>
-      
-            <!-- Embedded Google Map -->
-            <iframe
-              class="w-full h-96 rounded-lg border"
-              src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d112193.2637200107!2d77.29705598816074!3d28.508459547984707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x390ce5d5df28909b%3A0x6163e14e6aa112fd!2sB-609%20%26%20610%2C%20LOGIX%20TECHNOVA%2C%20Block%20B%2C%20Sector%20132%2C%20Noida%2C%20Uttar%20Pradesh%20201305!3m2!1d28.5084844!2d77.37945739999999!5e0!3m2!1sen!2sin!4v1743842269907!5m2!1sen!2sin"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
-
-
-      
-          <!-- Bottom Info -->
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 bg-blue-50 p-6 mt-16 rounded-lg text-sm text-center">
-            <!-- Email -->
-            <!-- <div>
-              <h4 class="font-semibold text-blue-900 mb-1">📧 Email Us</h4>
-              <p>Sales: <a href="mailto:sales@kanakdrishtiinfo.com" class="text-blue-600">sales@kanakdrishtiinfo.com</a></p>
-              <p>Human Resource: <a href="mailto:hr@kanakdrishtiinfo.com" class="text-blue-600">hr@kanakdrishtiinfo.com</a></p>
-            </div> -->
-      
-            <!-- Call -->
-            <!-- <div>
-              <h4 class="font-semibold text-blue-900 mb-1">📞 Call Us</h4>
-              <p><a href="tel:+919911201074" class="text-blue-600">+91 9911201074</a></p>
-              <p><a href="tel:+918076832529" class="text-blue-600">+91 8076832529</a></p>
-            </div> -->
-      
-            <!-- Timing -->
-            <!-- <div>
-              <h4 class="font-semibold text-blue-900 mb-1">🕒 Office Timings</h4>
-              <p>Mon – Sat: 10:00 AM – 07:00 PM</p>
-              <p>Sunday – CLOSED</p>
-            </div> -->
           </div>
         </div>
       </section>
       
-      
-      <a href="https://wa.me/919212378780"
-      target="_blank"
-      aria-label="Chat on WhatsApp"
-      class="fixed bottom-5 right-5 z-50 w-16 h-16 bg-green-500 text-white rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-transform duration-300">
-     <i class="fab fa-whatsapp text-3xl"></i>
-   </a>
 
 
-     <!-- footer  Section -->
-     <footer class="footer-bg text-gray-300 py-10 px-6 bg-[#001f23]">
+
+
+    <!-- footer  Section -->
+    <footer class="footer-bg text-gray-300 py-10 px-6 bg-[#001f23]">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
 
             <!-- About Company -->
@@ -383,11 +381,11 @@
                 <ul class="mt-2 space-y-2 text-lg hover:underline ">
                     <li><i class="fa fa-angle-double-right text-white" aria-hidden="true"></i> <a href="/"
                             class="hover:text-teal-500">Home</a></li>
-                    <li><i class="fa fa-angle-double-right text-white" aria-hidden="true"></i> <a href="about-us.html"
+                    <li><i class="fa fa-angle-double-right text-white" aria-hidden="true"></i> <a href="/about-us.html"
                             class="hover:text-teal-500">About Us</a></li>
-                    <li><i class="fa fa-angle-double-right text-white" aria-hidden="true"></i> <a href="contact-us.html"
+                    <li><i class="fa fa-angle-double-right text-white" aria-hidden="true"></i> <a href="/contact-us.html"
                             class="hover:text-teal-500">Contact Us</a></li>
-                    <li><i class="fa fa-angle-double-right text-white" aria-hidden="true"></i> <a href="packages.html"
+                    <li><i class="fa fa-angle-double-right text-white" aria-hidden="true"></i> <a href="/packages.html"
                             class="hover:text-teal-500">Packages</a></li>
                 </ul>
             </div>
@@ -396,11 +394,11 @@
             <div>
                 <h3 class="text-teal-400 font-semibold text-lg">Our Services</h3>
                 <ul class="mt-2 space-y-2 text-sm">
-                    <li><i class="fa fa-angle-double-right text-white" aria-hidden="true"></i> <a href="services/design.html"
+                    <li><i class="fa fa-angle-double-right text-white" aria-hidden="true"></i> <a href="/services/design.html"
                             class="hover:text-teal-500 text-lg hover:underline"> Design</a></li>
-                    <li><i class="fa fa-angle-double-right text-white" aria-hidden="true"></i> <a href="services/development.html"
+                    <li><i class="fa fa-angle-double-right text-white" aria-hidden="true"></i> <a href="/services/development.html"
                             class="hover:text-teal-500 text-lg hover:underline  ">Development</a></li>
-                    <li><i class="fa fa-angle-double-right text-white" aria-hidden="true"></i> <a href="services/digital-marketing.html"
+                    <li><i class="fa fa-angle-double-right text-white" aria-hidden="true"></i> <a href="/services/digital-marketing.html"
                             class="hover:text-teal-500 text-lg hover:underline  "> Digital Marketing</a></li>
                     <!-- <li><i class="fa fa-angle-double-right text-white" aria-hidden="true"></i>      <a href="#" class="hover:text-teal-500">Search Engine Optimization</a></li> -->
                 </ul>
@@ -423,10 +421,10 @@
                     <a href="https://www.facebook.com/skynetikstech" target="_blank" class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center hover:bg-teal-500 transition text-white text-xl">
                       <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="https://www.instagram.com/skynetikstech/#" target="_blank" class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center hover:bg-teal-500 transition text-white text-xl">
+                    <a href="https://in.linkedin.com/company/skynetikstech?trk=public_profile_topcard-current-company" target="_blank" class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center hover:bg-teal-500 transition text-white text-xl">
                       <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="https://www.linkedin.com/company/skynetikstech/?trk=public_profile_topcard-current-company&originalSubdomain=in" target="_blank" class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center hover:bg-teal-500 transition text-white text-xl">
+                    <a href="https://www.instagram.com/skynetikstech/#" target="_blank" class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center hover:bg-teal-500 transition text-white text-xl">
                       <i class="fab fa-linkedin-in"></i>
                     </a>
                   </div>
@@ -448,8 +446,45 @@
 
         </div>
     </footer>
-   
-      
-    
+
+
+    <!-- Script for Navbar -->
+    <script src="/main.js"></script>
+
+    <script>
+        // Initialize Swiper.js
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: { delay: 3000 },
+            pagination: { el: ".swiper-pagination", clickable: true },
+            navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }
+        });
+    </script>
+
+    <!-- jQuery & Owl Carousel Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Owl Carousel Initialization -->
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: false,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                responsive: {
+                    0: { items: 1 },
+                    768: { items: 2 },
+                    1024: { items: 3 }
+                }
+            });
+        });
+    </script>
+
+    <!-- Removing the duplicate mobile submenu functionality since it's already in main.js -->
 </body>
+
 </html>

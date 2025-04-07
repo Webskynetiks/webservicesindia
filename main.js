@@ -177,3 +177,19 @@ document.addEventListener('DOMContentLoaded', function() {
 // mobileDropdownBtn.addEventListener('click', () => {
 //     mobileDropdown.classList.toggle('hidden');
 // });
+
+
+  const backToTopBtn = document.getElementById('backToTopBtn');
+
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / docHeight) * 100;
+
+    if (scrollPercent > 70) {
+      backToTopBtn.classList.remove('hidden');
+    } else {
+      backToTopBtn.classList.add('hidden');
+    }
+  });
+
