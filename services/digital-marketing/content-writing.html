@@ -19,24 +19,25 @@
 <body>
 
 
+    <!-- Navigation Bar -->
     <nav class="bg-white shadow-md z-50 border-b-2 border-purple-600 relative">
         <div class="container mx-auto px-4 py-5 flex justify-between items-center">
             <!-- Logo -->
             <div class="flex items-center">
                 <a href="/">
-                    <img src="/Images/logo.webp" alt="Logo" class="h-8">
+                    <img src="/Images/logo.webp" alt="Logo" class="h-10">
                 </a>
             </div>
 
             <!-- Menu Button for Mobile -->
-            <button id="menu-btn" class="md:hidden text-gray-600 focus:outline-none">
+            <button id="menu-btn" class="lg:hidden text-gray-600 focus:outline-none">
                 <i class="fa-solid fa-bars text-2xl"></i>
             </button>
 
             <!-- Navigation Links -->
-            <ul id="menu" class="hidden md:flex space-x-6 text-gray-700 text-xl font-bold">
-                <li><a href="#" class="hover:text-purple-600">Home</a></li>
-                <li><a href="#" class="hover:text-purple-600">About</a></li>
+            <ul id="menu" class="hidden lg:flex space-x-6 text-gray-700 text-xl font-bold">
+                <li><a href="/" class="hover:text-purple-600">Home</a></li>
+                <li><a href="/about-us.html" class="hover:text-purple-600">About</a></li>
 
                 <!-- Services Dropdown -->
                 <li class="relative group">
@@ -59,18 +60,24 @@
                                 </svg>
                             </a>
                             <ul class="submenu">
-                                <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Website
-                                        Design</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Website
+                                <li><a href="/services/design/website-design.html"
+                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Website Design</a>
+                                </li>
+                                <li><a href="/services/design/website-redesign.html"
+                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Website
                                         Resdesign</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Logo
+                                <li><a href="/services/design/logo-design.html"
+                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Logo Design</a>
+                                </li>
+                                <li><a href="/services/design/landing-page.html"
+                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Landing Page</a>
+                                </li>
+                                <li><a href="/services/design/brochure-design.html"
+                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Brochure
                                         Design</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Landing
-                                        Page</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Brochure
-                                        Design</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Banner
-                                        Design</a></li>
+                                <li><a href="/services/design/banner-design.html"
+                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Banner Design</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="relative submenu-parent">
@@ -82,20 +89,27 @@
                                 </svg>
                             </a>
                             <ul class="submenu">
-                                <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Web
+                                <li><a href="/services/development/web-development.html"
+                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Web
                                         Development</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">PHP
+                                <li><a href="/services/development/php-development.html"
+                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">PHP
                                         Development</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Wordpress
+                                <li><a href="/services/development/wordpress-development.html"
+                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Wordpress
                                         Development</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">.Net
+                                <li><a href="/services/development/dot-net-development.html"
+                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">.NET
                                         Development</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Java
+                                <li><a href="/services/development/java-development.html"
+                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Java
                                         Development</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">React
+                                <li><a href="/services/development/react-development.html"
+                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">React
                                         Development</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Magento
-                                        Ecommerce Development</a></li>
+                                <li><a href="/services/development/magento-development.html"
+                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Magento Ecommerce
+                                        Development</a></li>
                             </ul>
                         </li>
                         <li class="relative submenu-parent">
@@ -107,37 +121,40 @@
                                 </svg>
                             </a>
                             <ul class="submenu">
-                                <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">SEO</a>
-                                </li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Social
-                                        Media Optimization</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Bulk SMS
+                                <li><a href="/services/digital-marketing/search-engine-optimization.html"
+                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Search Engine
+                                        Optimization</a></li>
+                                <li><a href="/services/digital-marketing/social-media-optimization.html"
+                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Social Media
                                         Marketing</a></li>
-                                <!-- <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Email Marketing</a></li> -->
-                                <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Content
+                                <li><a href="/services/digital-marketing/bulk-sms-services.html"
+                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Bulk SMS
+                                        Marketing</a></li>
+                                <li><a href="/services/digital-marketing/content-writing.html"
+                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Content
                                         Marketing</a></li>
                             </ul>
                         </li>
                     </ul>
                 </li>
 
-                <li><a href="#" class="hover:text-purple-600">Blogs</a></li>
-                <li><a href="#" class="hover:text-purple-600">Contact Us</a></li>
+                <li><a href="/packages.html" class="hover:text-purple-600">Packages</a></li>
+                <li><a href="/contact-us.html" class="hover:text-purple-600">Contact Us</a></li>
             </ul>
 
             <!-- Free Consultation Button -->
-            <a href="#"
-                class="hidden md:inline-block bg-purple-600 text-white px-5 py-2 rounded-full hover:bg-purple-700 transition text-xl">
-                Free Consultation
+            <a href="tel:+919212378780"
+                class="hidden lg:inline-block bg-purple-600 text-white px-5 py-2 rounded-full hover:bg-purple-700 transition text-xl">
+                Free Consultation <i class="fa-solid fa-headset"></i>
             </a>
         </div>
 
         <!-- Mobile Menu -->
         <div id="mobile-menu"
-            class="hidden md:hidden absolute top-16 left-0 w-full bg-white shadow-lg border-t border-purple-600">
+            class="hidden lg:hidden absolute top-16 left-0 w-full bg-white shadow-lg border-t border-purple-600">
             <ul class="flex flex-col space-y-4 py-4 px-6 text-gray-700 text-lg font-bold">
-                <li><a href="#" class="hover:text-purple-600">Home</a></li>
-                <li><a href="#" class="hover:text-purple-600">About</a></li>
+                <li><a href="/" class="hover:text-purple-600">Home</a></li>
+                <li><a href="/about-us.html" class="hover:text-purple-600">About</a></li>
 
                 <!-- Services Dropdown for Mobile -->
                 <li>
@@ -151,8 +168,7 @@
                     <ul id="mobile-dropdown" class="hidden flex-col bg-gray-100 mt-2 rounded-md">
                         <!-- Design Submenu -->
                         <li class="relative">
-                            <button
-                                class="mobile-submenu-btn w-full px-4 py-2 hover:bg-purple-100 flex justify-between items-center">
+                            <button class="mobile-submenu-btn w-full px-4 py-2  flex justify-between items-center">
                                 Design
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -160,25 +176,24 @@
                                 </svg>
                             </button>
                             <ul class="hidden flex-col bg-gray-200 pl-8">
-                                <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Website
-                                        Design</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Website
-                                        Resdesign</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Logo
-                                        Design</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Landing
-                                        Page</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Brochure
-                                        Design</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Banner
-                                        Design</a></li>
+                                <li><a href="/services/design/website-design.html"
+                                        class="block px-4 py-2  whitespace-nowrap">Website Design</a></li>
+                                <li><a href="/services/design/website-redesign.html"
+                                        class="block px-4 py-2  whitespace-nowrap">Website Resdesign</a></li>
+                                <li><a href="/services/design/logo-design.html"
+                                        class="block px-4 py-2  whitespace-nowrap">Logo Design</a></li>
+                                <li><a href="/services/design/landing-page.html"
+                                        class="block px-4 py-2  whitespace-nowrap">Landing Page</a></li>
+                                <li><a href="/services/design/brochure-design.html"
+                                        class="block px-4 py-2  whitespace-nowrap">Brochure Design</a></li>
+                                <li><a href="/services/design/banner-design.html"
+                                        class="block px-4 py-2  whitespace-nowrap">Banner Design</a></li>
                             </ul>
-                        </li>
+                        </li>   
 
                         <!-- Development Submenu -->
                         <li class="relative">
-                            <button
-                                class="mobile-submenu-btn w-full px-4 py-2 hover:bg-purple-100 flex justify-between items-center">
+                            <button class="mobile-submenu-btn w-full px-4 py-2  flex justify-between items-center">
                                 Development
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -186,51 +201,49 @@
                                 </svg>
                             </button>
                             <ul class="hidden flex-col bg-gray-200 pl-8">
-                                <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Web
-                                        Development</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">PHP
-                                        Development</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Wordpress
-                                        Development</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">.Net
-                                        Development</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Java
-                                        Development</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">React
-                                        Development</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Magento
-                                        Ecommerce Development</a></li>
+                                <li><a href="/services/development/web-development.html"
+                                        class="block px-4 py-2 whitespace-nowrap">Web Development</a></li>
+                                <li><a href="/services/development/php-development.html"
+                                        class="block px-4 py-2  whitespace-nowrap">PHP Development</a></li>
+                                <li><a href="/services/development/wordpress-development.html"
+                                        class="block px-4 py-2  whitespace-nowrap">Wordpress Development</a></li>
+                                <li><a href="/services/development/dot-net-development.html"
+                                        class="block px-4 py-2  whitespace-nowrap">.NET Development</a></li>
+                                <li><a href="/services/development/java-development.html"
+                                        class="block px-4 py-2  whitespace-nowrap">Java Development</a></li>
+                                <li><a href="/services/development/react-development.html"
+                                        class="block px-4 py-2  whitespace-nowrap">React Development</a></li>
+                                <li><a href="/services/development/magento-development.html"
+                                        class="block px-4 py-2  whitespace-nowrap">Magento Ecommerce Development</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Digital Marketing Submenu -->
+                        <li class="relative">
+                            <button class="mobile-submenu-btn w-full px-4 py-2  flex justify-between items-center">
+                                Digital Marketing
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <ul class="hidden flex-col bg-gray-200 pl-8">
+                                <li><a href="/services/digital-marketing/search-engine-optimization.html"
+                                        class="block px-4 py-2  whitespace-nowrap">Search Engine Optimization</a></li>
+                                <li><a href="/services/digital-marketing/social-media-optimization.html"
+                                        class="block px-4 py-2  whitespace-nowrap">Social Media Marketing</a></li>
+                                <li><a href="/services/digital-marketing/bulk-sms-services.html"
+                                        class="block px-4 py-2  whitespace-nowrap">Bulk SMS Marketing</a></li>
+                                <li><a href="/services/digital-marketing/content-writing.html"
+                                        class="block px-4 py-2  whitespace-nowrap">Content Marketing</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </li>
 
-                <!-- Digital Marketing Submenu -->
-                <li class="relative">
-                    <button
-                        class="mobile-submenu-btn w-full px-4 py-2 hover:bg-purple-100 flex justify-between items-center">
-                        Digital Marketing
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
-                            </path>
-                        </svg>
-                    </button>
-                    <ul class="hidden flex-col bg-gray-200 pl-8">
-                        <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">SEO</a>
-                        </li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Social
-                                Media Optimization</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Bulk SMS
-                                Marketing</a></li>
-                        <!-- <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Email Marketing</a></li> -->
-                        <li><a href="#" class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Content
-                                Marketing</a></li>
-                    </ul>
-                </li>
-            </ul>
-            </li>
-
-            <li><a href="#" class="hover:text-purple-600">Blogs</a></li>
-            <li><a href="#" class="hover:text-purple-600">Contact Us</a></li>
+                <li><a href="/packages.html" class="hover:text-purple-600">Packages</a></li>
+                <li><a href="/contact-us.html" class="hover:text-purple-600">Contact Us</a></li>
             </ul>
         </div>
     </nav>
@@ -465,77 +478,98 @@
 
 
 
-    <!-- footer  Section -->
-    <footer class="footer-bg text-gray-300 py-10 px-6 bg-[#001f23]">
+     <!-- footer  Section -->
+     <footer class="footer-bg text-gray-300 py-10 px-6 bg-[#001f23]">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
 
             <!-- About Company -->
             <div>
-                <h3 class="text-teal-400 font-semibold text-2xl">Web Solutions</h3>
+                <h3 class="text-white font-semibold text-2xl">Web Solutions</h3>
                 <p class="mt-2 text-sm">
                     We are honoured as the leading web designing company in the region and
                     thus offer superior quality work to our clients.
                 </p>
-                <a href="about-us.html" class="text-teal-300 mt-2 inline-block text-sm hover:text-teal-500">Read
+                <a href="/about-us.html" class="text-white mt-2 inline-block text-sm hover:text-teal-500">Read
                     More</a>
             </div>
             <!-- Company Links -->
             <div>
-                <h3 class="text-teal-400 font-semibold text-lg">Quick Links</h3>
-                <ul class="mt-2 space-y-2 text-sm">
-                    <li>→ <a href="/" class="hover:text-teal-500">Home</a></li>
-                    <li>→ <a href="about-us.html" class="hover:text-teal-500">About Us</a></li>
-                    <li>→ <a href="contact-us.html" class="hover:text-teal-500">Contact Us</a></li>
+                <h3 class="text-white font-semibold text-lg">Quick Links</h3>
+                <ul class="mt-2 space-y-2 text-lg  ">
+                    <li class="hover:underline"><i class="fa fa-angle-double-right text-white  " aria-hidden="true"></i> <a href="/"
+                            class="hover:text-teal-500">Home</a></li>
+                    <li class="hover:underline"><i class="fa fa-angle-double-right text-white  " aria-hidden="true"></i> <a href="/about-us.html"
+                            class="hover:text-teal-500">About Us</a></li>
+                    <li class="hover:underline"><i class="fa fa-angle-double-right text-white  " aria-hidden="true"></i> <a href="/contact-us.html"
+                            class="hover:text-teal-500">Contact Us</a></li>
+                    <li class="hover:underline"><i class="fa fa-angle-double-right text-white  " aria-hidden="true"></i> <a href="/packages.html"
+                            class="hover:text-teal-500">Packages</a></li>
                 </ul>
             </div>
 
             <!-- Our Services -->
             <div>
-                <h3 class="text-teal-400 font-semibold text-lg">Our Services</h3>
+                <h3 class="text-white font-semibold text-lg">Our Services</h3>
                 <ul class="mt-2 space-y-2 text-sm">
-                    <li>→ <a href="#" class="hover:text-teal-500">Website Designing</a></li>
-                    <li>→ <a href="#" class="hover:text-teal-500">Website Development</a></li>
-                    <li>→ <a href="#" class="hover:text-teal-500">Graphic Designing</a></li>
-                    <li>→ <a href="#" class="hover:text-teal-500">Search Engine Optimization</a></li>
+                    <li><i class="fa fa-angle-double-right text-white" aria-hidden="true"></i> <a href="/services/design.html"
+                            class="hover:text-teal-500 text-lg hover:underline"> Design</a></li>
+                    <li><i class="fa fa-angle-double-right text-white" aria-hidden="true"></i> <a href="/services/development.html"
+                            class="hover:text-teal-500 text-lg hover:underline  ">Development</a></li>
+                    <li><i class="fa fa-angle-double-right text-white" aria-hidden="true"></i> <a href="/services/digital-marketing.html"
+                            class="hover:text-teal-500 text-lg hover:underline  "> Digital Marketing</a></li>
+                    <!-- <li><i class="fa fa-angle-double-right text-white" aria-hidden="true"></i>      <a href="#" class="hover:text-teal-500">Search Engine Optimization</a></li> -->
                 </ul>
             </div>
 
 
             <!-- Contact Information -->
             <div>
-                <h3 class="text-teal-400 font-semibold text-lg">Contact Us</h3>
+                <h3 class="text-white font-semibold text-lg">Contact Us</h3>
                 <ul class="mt-2 space-y-2 text-sm">
-                    <li>🏠 B-609, Logix Technova, Sec-132, Noida, (UP) 201304, India</li>
-                    <li>📞 +91 120 4310900</li>
-                    <li>📱 +91 92 123 78780</li>
-                    <li>📧 <a href="mailto:enquiry@ssi.bz" class="hover:text-teal-500">enquiry@ssi.bz</a></li>
+                    <li>     <i class="fas fa-house text-white text-sm"></i>
+                        B-609, Logix Technova, Sec-132, Noida, (UP) 201304, India</li>
+                    <li>    <i class="fas fa-phone text-white text-sm"></i>
+                        +91 120 4310900,  +91 92 12378780</li>
+                    <li>    
+                    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:enquiry@ssi.bz" class="hover:text-teal-500">enquiry@ssi.bz</a></li>
                 </ul>
                 <!-- Social Icons -->
                 <div class="flex space-x-3 mt-4">
-                    <a href="#" class="bg-gray-600 p-2 rounded-full hover:bg-teal-500 transition">
-                        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="w-4 h-4">
+                    <a href="https://www.facebook.com/skynetikstech" target="_blank" class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center hover:bg-teal-500 transition text-white text-xl">
+                      <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="#" class="bg-gray-600 p-2 rounded-full hover:bg-teal-500 transition">
-                        <img src="https://cdn-icons-png.flaticon.com/512/145/145808.png" alt="Pinterest"
-                            class="w-4 h-4">
+                    <a href="https://www.instagram.com/skynetikstech/#" target="_blank" class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center hover:bg-teal-500 transition text-white text-xl">
+                      <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="#" class="bg-gray-600 p-2 rounded-full hover:bg-teal-500 transition">
-                        <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" class="w-4 h-4">
+                    <a href="https://www.linkedin.com/company/skynetikstech/?trk=public_profile_topcard-current-company&originalSubdomain=in" target="_blank" class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center hover:bg-teal-500 transition text-white text-xl">
+                      <i class="fab fa-linkedin-in"></i>
                     </a>
-                </div>
+                  </div>
+                  
             </div>
 
         </div>
 
-        <!-- Bottom Footer -->
-        <div
-            class="mt-10 border-t border-gray-500 pt-4 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
-            <p>© Copyright 2025 <a href="https://skynetiks.com/" target="_blank"> <span
-                        class="hover:underline">Skynetiks Technologies.</span></a> All Rights Reserved.</p>
-            <a href="#" class="bg-teal-500 hover:bg-teal-600 text-white p-2 rounded-full transition">
-                ⬆️
-            </a>
-        </div>
+         <!-- Bottom Footer -->
+         <div
+         class="mt-10 border-t border-gray pt-4 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
+         <p class="text-white">© Copyright 2025 <a href="https://skynetiks.com/" target="_blank"> <span
+                     class="hover:underline">Skynetiks Technologies.</span></a> All Rights Reserved.</p>
+         <a href="#top" id="backToTopBtn"
+             class="hidden fixed bottom-6 left-6 bg-teal-500 hover:bg-teal-600 text-white px-5 py-4 rounded-full shadow-lg transition duration-300 z-50 text-xl"
+             title="Back to top">
+             <i class="fa-regular fa-circle-up"></i>
+         </a>
+
+     </div>
+     
+
+     <a href="https://wa.me/919212378780" target="_blank" aria-label="Chat on WhatsApp"
+     class="fixed bottom-5 right-5 z-50 w-16 h-16 bg-green-500 text-white rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-transform duration-300">
+     <i class="fab fa-whatsapp text-3xl"></i>
+ </a>
+
+       
     </footer>
 
 
