@@ -112,71 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Remove the duplicate code below since we've moved it inside DOMContentLoaded
-// menuBtn.addEventListener('click', () => {
-//     mobileMenu.classList.toggle('hidden');
-// });
 
-// // Replace the existing dropdown JavaScript with this updated version
-// const servicesBtn = document.getElementById('services-btn');
-// const servicesDropdown = document.getElementById('services-dropdown');
-// let timeoutId;
-
-// // Main dropdown
-// servicesBtn.parentElement.addEventListener('mouseenter', () => {
-//     clearTimeout(timeoutId);
-//     servicesDropdown.classList.remove('hidden');
-// });
-
-// servicesBtn.parentElement.addEventListener('mouseleave', (e) => {
-//     // Check if the mouse is moving to the dropdown
-//     if (!e.relatedTarget || !servicesDropdown.contains(e.relatedTarget)) {
-//         timeoutId = setTimeout(() => {
-//             if (!servicesDropdown.matches(':hover')) {
-//                 servicesDropdown.classList.add('hidden');
-//             }
-//         }, 100);
-//     }
-// });
-
-// // Keep dropdown visible when hovering over it
-// servicesDropdown.addEventListener('mouseenter', () => {
-//     clearTimeout(timeoutId);
-//     servicesDropdown.classList.remove('hidden');
-// });
-
-// servicesDropdown.addEventListener('mouseleave', (e) => {
-//     // Check if the mouse is moving back to the button
-//     if (!e.relatedTarget || !servicesBtn.contains(e.relatedTarget)) {
-//         timeoutId = setTimeout(() => {
-//             servicesDropdown.classList.add('hidden');
-//         }, 100);
-//     }
-// });
-
-// // Add event listeners for submenu items
-// document.querySelectorAll('.submenu-parent').forEach(parent => {
-//     const submenu = parent.querySelector('.submenu');
-    
-//     parent.addEventListener('mouseenter', () => {
-//         clearTimeout(timeoutId);
-//         submenu.style.display = 'block';
-//     });
-    
-//     parent.addEventListener('mouseleave', (e) => {
-//         if (!e.relatedTarget || !submenu.contains(e.relatedTarget)) {
-//             submenu.style.display = 'none';
-//         }
-//     });
-// });
-
-// // Mobile dropdown toggle
-// const mobileDropdownBtn = document.getElementById('mobile-dropdown-btn');
-// const mobileDropdown = document.getElementById('mobile-dropdown');
-
-// mobileDropdownBtn.addEventListener('click', () => {
-//     mobileDropdown.classList.toggle('hidden');
-// });
 
 
   const backToTopBtn = document.getElementById('backToTopBtn');
@@ -191,5 +127,50 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
       backToTopBtn.classList.add('hidden');
     }
-  });
+    });
 
+
+            // Add JavaScript for filtering 
+        // filter for the servcies div in the hom page----------------//
+        document.addEventListener("DOMContentLoaded", function () {
+          const tabs = document.querySelectorAll(".service-tab");
+          const cards = document.querySelectorAll(".service-card");
+
+          // Show only design cards by default
+          cards.forEach((card) => {
+            if (card.classList.contains("design")) {
+              card.style.display = "block";
+            } else {
+              card.style.display = "none";
+            }
+          });
+
+          tabs.forEach((tab) => {
+            tab.addEventListener("click", () => {
+              // Remove active class from all tabs
+              tabs.forEach((t) => {
+                t.classList.remove("active", "bg-purple-600", "text-white");
+                t.classList.add("bg-gray-200", "text-gray-700");
+              });
+
+              // Add active class to clicked tab
+              tab.classList.add("active", "bg-purple-600", "text-white");
+              tab.classList.remove("bg-gray-200", "text-gray-700");
+
+              const category = tab.getAttribute("data-tab");
+
+              // Show/hide cards based on category
+              cards.forEach((card) => {
+                if (category === "all") {
+                  card.style.display = "block";
+                } else {
+                  if (card.classList.contains(category)) {
+                    card.style.display = "block";
+                  } else {
+                    card.style.display = "none";
+                  }
+                }
+              });
+            });
+          });
+        });
