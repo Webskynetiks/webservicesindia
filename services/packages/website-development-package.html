@@ -19,32 +19,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Animate.css CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-    <!-- Custom CSS for Swiper -->
-    <style>
-        .swiper {
-            width: 100%;
-            height: auto;
-            margin-top: 20px;
-            margin-bottom: 30px;
-        }
-        .swiper-slide {
-            height: auto !important;
-        }
-        .swiper-button-next, .swiper-button-prev {
-            color: #4F46E5 !important;
-            background: rgba(255, 255, 255, 0.6);
-            width: 40px !important;
-            height: 40px !important;
-            border-radius: 50%;
-        }
-        .swiper-button-next:after, .swiper-button-prev:after {
-            font-size: 20px !important;
-        }
-        .swiper-pagination-bullet-active {
-            background: #4F46E5 !important;
-        }
-    </style>
+
+   
 
     <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -382,32 +361,42 @@
               
                     <a href="/contact-us.html"
                       class="inline-block bg-cyan-500 text-white px-6 py-3 rounded-md hover:bg-cyan-600 transition shadow">
-                      Read More >>
+                      Contact Us
                     </a>
                   </div>
               
                   <!-- Right Contact Form -->
                   <div class="bg-white p-4 rounded-xl shadow-lg">
                     <h3 class="text-2xl font-semibold  mb-2 bg-cyan-500 text-white px-4 py-2 rounded-md">Quick Enquiry</h3>
-                    <form class="space-y-4">
-                      <input type="text" placeholder="Your Name (required)" required
-                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
-                      <input type="email" placeholder="Your Email (required)" required
-                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
-                      <input type="tel" placeholder="Your Number (required)" required
-                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
-                      <input type="text" placeholder="Subject"
-                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
-                      <input type="text" placeholder="Your Budget (required)" required
-                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
-                      <textarea rows="4" placeholder="Your Message"
-                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-              
-                      <button type="submit"
-                        class="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 rounded-md transition">
-                        Send Enquiry
-                      </button>
-                    </form>
+                    <form id="enquiryForm" class="space-y-4">
+                        <input type="text" id="name2" placeholder="Your Name (required)" required
+                          class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                        
+                        <input type="email" id="email2" placeholder="Your Email (required)" required
+                          class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                        
+                        <input type="tel" id="phone2" placeholder="Your Number (required)" required
+                          class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+<!--                                 
+                        <input type="text" id="subject2" placeholder="Subject"
+                          class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                         -->
+                        <select id="package" required
+                          class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                          <option value="">Select A Service</option>
+                          <option>Website Development packages</option>
+                          <option>Ecommerce Website Development Packages</option>
+                          <option>Others</option>
+                        </select>
+                        
+                        <textarea id="message2" rows="4" placeholder="Your Message"
+                          class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                      
+                        <button type="submit"
+                          class="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 rounded-md transition">
+                          Send Enquiry
+                        </button>
+                      </form>
                   </div>
               
                 </div>
@@ -587,6 +576,23 @@
 
         <!-- Script for Navbar -->
         <script src="/main.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="/js/form.js"></script>
+
+
+        <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/67f75b2f09f0b7190b51a67b/1iof3od57';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
 
         <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

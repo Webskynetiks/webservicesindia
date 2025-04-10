@@ -295,61 +295,55 @@
           </div>
       
           <!-- Form + Map -->
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-            <!-- Contact Form -->
-            <form class="space-y-4">
-              <input type="text" placeholder="Your Name" class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
-              <input type="email" placeholder="Your Email" class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
-              <input type="text" placeholder="Enter Your Number" class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
-              <select class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <option>Select A Service</option>
-                <option>Web Development</option>
-                <option>App Development</option>
-                <option>Digital Marketing</option>
-                <option>UI/UX Design</option>
-              </select>
-              <input type="text" placeholder="Your Company Name" class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
-              <textarea rows="4" placeholder="Message" class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-              <button type="submit" class="bg-blue-900 text-white px-6 py-3 rounded hover:bg-blue-800 transition-all">
-                Request A Quote
-              </button>
-            </form>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+    <!-- Contact Form -->
+    <form id="myForm" class="space-y-4">
+      <input type="text" id="name" placeholder="Your Name" required class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      <input type="email" id="email" placeholder="Your Email" required class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      <input type="text" id="mobile" placeholder="Enter Your Number" required class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
       
-            <!-- Embedded Google Map -->
-            <iframe
-              class="w-full h-96 rounded-lg border"
-              src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d112193.2637200107!2d77.29705598816074!3d28.508459547984707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x390ce5d5df28909b%3A0x6163e14e6aa112fd!2sB-609%20%26%20610%2C%20LOGIX%20TECHNOVA%2C%20Block%20B%2C%20Sector%20132%2C%20Noida%2C%20Uttar%20Pradesh%20201305!3m2!1d28.5084844!2d77.37945739999999!5e0!3m2!1sen!2sin!4v1743842269907!5m2!1sen!2sin"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
+      <select id="services" required class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <option value="">Select A Service</option>
+        <option>Website Design</option>
+        <option>Logo Design</option>
+        <option>Landing Page</option>
+        <option>Brochure Design</option>
+        <option>Banner Design</option>     
+        <option>Web Development</option>
+        <option>PHP Development</option>
+        <option>WordPress Development</option>
+        <option>Magento Ecommerce Development</option>
+        <option>React Development</option>
+        <option>Java Development</option>
+        <option>Search Engine Optimization</option>
+        <option>Social Media Marketing</option>
+        <option>Bulk SMS Marketing</option>
+        <option>Content Marketing</option>
+        <option>Others</option>
+      </select>
+  
+      <input type="text" id="company" placeholder="Your Company Name" class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      <textarea rows="4" id="message" placeholder="Message" class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+      
+      <button type="submit" class="bg-blue-900 text-white px-6 py-3 rounded hover:bg-blue-800 transition-all">
+        Request A Quote
+      </button>
+    </form>
+  
+    <!-- Embedded Google Map -->
+    <iframe
+      class="w-full h-96 rounded-lg border"
+      src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d112193.2637200107!2d77.29705598816074!3d28.508459547984707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x390ce5d5df28909b%3A0x6163e14e6aa112fd!2sB-609%20%26%20610%2C%20LOGIX%20TECHNOVA%2C%20Block%20B%2C%20Sector%20132%2C%20Noida%2C%20Uttar%20Pradesh%20201305!3m2!1d28.5084844!2d77.37945739999999!5e0!3m2!1sen!2sin!4v1743842269907!5m2!1sen!2sin"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
 
 
       
           <!-- Bottom Info -->
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 bg-blue-50 p-6 mt-16 rounded-lg text-sm text-center">
-            <!-- Email -->
-            <!-- <div>
-              <h4 class="font-semibold text-blue-900 mb-1">📧 Email Us</h4>
-              <p>Sales: <a href="mailto:sales@kanakdrishtiinfo.com" class="text-blue-600">sales@kanakdrishtiinfo.com</a></p>
-              <p>Human Resource: <a href="mailto:hr@kanakdrishtiinfo.com" class="text-blue-600">hr@kanakdrishtiinfo.com</a></p>
-            </div> -->
-      
-            <!-- Call -->
-            <!-- <div>
-              <h4 class="font-semibold text-blue-900 mb-1">📞 Call Us</h4>
-              <p><a href="tel:+919911201074" class="text-blue-600">+91 9911201074</a></p>
-              <p><a href="tel:+918076832529" class="text-blue-600">+91 8076832529</a></p>
-            </div> -->
-      
-            <!-- Timing -->
-            <!-- <div>
-              <h4 class="font-semibold text-blue-900 mb-1">🕒 Office Timings</h4>
-              <p>Mon – Sat: 10:00 AM – 07:00 PM</p>
-              <p>Sunday – CLOSED</p>
-            </div> -->
-          </div>
+        
         </div>
       </section>
       
@@ -459,5 +453,54 @@
     
 </body>
 <script src="main.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="js/form.js"></script>
+<script>
+  document.getElementById("myForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const formData = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      mobile: document.getElementById("mobile").value,
+      company: document.getElementById("company").value,
+      message: document.getElementById("message").value,
+      services: document.getElementById("services").value,
+      pageUrl: window.location.href
+    };
+
+    Email.send({
+      Host: "smtp.elasticemail.com",
+      Port: 2525,
+      Username: "sales@skynetiks.com",
+      Password: "A67B232604CAF3ECE4584F9DE30A17054104", // ⚠️ Consider moving to backend for security
+      To: "sales@skynetiks.com",
+      From: "sales@skynetiks.com",
+      Subject: `New Quote Request: ${formData.services}`,
+      Body: `
+        <b>Name:</b> ${formData.name}<br/>
+        <b>Email:</b> ${formData.email}<br/>
+        <b>Phone:</b> ${formData.mobile}<br/>
+        <b>Company:</b> ${formData.company}<br/>
+        <b>Service:</b> ${formData.services}<br/>
+        <b>Message:</b><br/>${formData.message}<br/><br/>
+        <h4>Page URL:</h4>
+        <a href="${formData.pageUrl}" target="_blank">${formData.pageUrl}</a>
+      `
+    }).then(message => {
+      console.log("SMTPJS response:", message);
+      if (message === "OK") {
+        alert("Your request has been sent successfully!");
+        document.getElementById("myForm").reset();
+        // window.location.href = "/thankyou.html"; // Optional redirect
+      } else {
+        alert("Failed to send your request. Please try again.");
+      }
+    }).catch(error => {
+      console.error("Email sending error:", error);
+      alert("Something went wrong while sending the email.");
+    });
+  });
+</script>
 
 </html>
