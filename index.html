@@ -600,6 +600,14 @@
               alt="Web"
             />
           </div>
+           <!-- Slide 2 -->
+           <div class="swiper-slide bg-white overflow-hidden shadow-lg">
+            <img
+              src="Images/daigital-marketing slides.webp"
+              class="w-full h-[35vh] md:h-[70vh] object-cover"
+              alt="Web"
+            />
+          </div>
         </div>
 
         <!-- Pagination -->
@@ -1405,6 +1413,60 @@
       </div>
     </section>
 
+
+
+     <!-- Partner Section -->
+     <section class="py-20 bg-gradient-to-b from-white to-gray-100">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+          <h2 class="text-4xl font-bold text-gray-800">
+            We work with <span class="text-blue-600">Global Partners</span>
+          </h2>
+          <p class="mt-3 text-gray-500 text-lg">Powering innovation with leading tech companies</p>
+    
+          <!-- Swiper Container -->
+          <div class="swiper partnerSwiper mt-14">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="bg-white border border-gray-200 shadow-md rounded-2xl p-8 flex items-center justify-center hover:shadow-lg transition min-h-[180px]">
+                  <img src="Images/partners/google-cloud.webp" alt="Google Cloud" class="h-24 object-contain mb-4" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white border border-gray-200 shadow-md rounded-2xl p-8 flex items-center justify-center hover:shadow-lg transition min-h-[180px]">
+                  <img src="Images/partners/azure.webp" alt="Azure" class="h-24 object-contain mb-4" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white border border-gray-200 shadow-md rounded-2xl p-8 flex items-center justify-center hover:shadow-lg transition min-h-[180px]">
+                  <img src="Images/partners/amazon.webp" alt="Amazon Web Services" class="h-24 object-contain mb-4" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white border border-gray-200 shadow-md rounded-2xl p-8 flex items-center justify-center hover:shadow-lg transition min-h-[180px]">
+                  <img src="Images/partners/microsoft.webp" alt="Microsoft" class="h-24 object-contain mb-4" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white border border-gray-200 shadow-md rounded-2xl p-8 flex items-center justify-center hover:shadow-lg transition min-h-[180px]">
+                  <img src="Images/partners/sap.webp" alt="SAP" class="h-24 object-contain mb-4" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white border border-gray-200 shadow-md rounded-2xl p-8 flex items-center justify-center hover:shadow-lg transition min-h-[180px]">
+                  <img src="Images/partners/acronics.webp" alt="Acronis" class="h-24 object-contain mb-4" />
+                </div>
+              </div>
+            </div>
+    
+            <!-- Pagination -->
+            <!-- <div class="swiper-pagination mt-10"></div> -->
+          </div>
+        </div>
+      </section>
+
+      
+
     <!-- Testimonial Section -->
     <section class="py-12 text-center">
       <h2 class="text-3xl font-bold text-gray-900">What Our Clients Say</h2>
@@ -1867,6 +1929,9 @@
             >
               <i class="fab fa-facebook-f"></i>
             </a>
+            <a href="https://www.youtube.com/@skynetikstech" target="_blank" class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center hover:bg-teal-500 transition text-white text-xl">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
             <a
               href="https://www.instagram.com/skynetikstech/#"
               target="_blank"
@@ -1980,6 +2045,34 @@
         },
       });
     </script>
+
+
+<script>
+    const swiper = new Swiper(".partnerSwiper", {
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 3,
+        },
+        768: {
+          slidesPerView: 4,
+        },
+        1024: {
+          slidesPerView: 5,
+        },
+      },
+    });
+  </script>
 
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
