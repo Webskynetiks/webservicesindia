@@ -114,20 +114,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+const backToTopBtn = document.getElementById('backToTopBtn');
 
-  const backToTopBtn = document.getElementById('backToTopBtn');
+         // Clears any inline left if set
 
-  window.addEventListener('scroll', () => {
-    const scrollTop = window.scrollY;
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const scrollPercent = (scrollTop / docHeight) * 100;
+// Optional: adjust bottom and size too
+backToTopBtn.style.bottom = '100px';    // Distance from bottom
+backToTopBtn.style.height = '40px';
+backToTopBtn.style.padding = '8px 12px';
+backToTopBtn.style.fontSize = '16px';
 
-    if (scrollPercent > 70) {
-      backToTopBtn.classList.remove('hidden');
-    } else {
-      backToTopBtn.classList.add('hidden');
-    }
-    });
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const scrollPercent = (scrollTop / docHeight) * 100;
+
+  if (scrollPercent > 70) {
+    backToTopBtn.classList.remove('hidden');
+  } else {
+    backToTopBtn.classList.add('hidden');
+  }
+});
+
+
+
 
 
             // Add JavaScript for filtering 
@@ -149,12 +159,12 @@ document.addEventListener('DOMContentLoaded', function() {
             tab.addEventListener("click", () => {
               // Remove active class from all tabs
               tabs.forEach((t) => {
-                t.classList.remove("active", "bg-purple-600", "text-white");
+                t.classList.remove("active", "bg-[#015790]", "text-white");
                 t.classList.add("bg-gray-200", "text-gray-700");
               });
 
               // Add active class to clicked tab
-              tab.classList.add("active", "bg-purple-600", "text-white");
+              tab.classList.add("active", "bg-[#015790]", "text-white");
               tab.classList.remove("bg-gray-200", "text-gray-700");
 
               const category = tab.getAttribute("data-tab");
@@ -174,3 +184,25 @@ document.addEventListener('DOMContentLoaded', function() {
             });
           });
         });
+
+
+
+
+  
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const whatsappBtn = document.querySelector('a[href*="wa.me"]');
+
+    if (whatsappBtn) {
+      // Remove 'bottom-5' if it exists
+      whatsappBtn.classList.remove('bottom-5');
+
+      // Set position to 70% from the top
+      whatsappBtn.style.top = '60vh';
+    }
+  });
+
+
+
+
+        

@@ -18,236 +18,238 @@
 <body>
 
 
+    <!-- Navbar -->
     <!-- Navigation Bar -->
-    <nav class="bg-white shadow-md z-50 border-b-2 border-purple-600 relative">
+
+    <nav class="fixed top-0 left-0 right-0 bg-white shadow-md z-50 border-b-2 border-[#015790] ">
         <div class="container mx-auto px-4 py-5 flex justify-between items-center">
-            <!-- Logo -->
-            <div class="flex items-center">
-                <a href="/">
-                    <img src="/Images/logo.webp" alt="Logo" class="h-10">
-                </a>
-            </div>
+              <!-- Logo -->
+              <div class="flex items-center">
+                  <a href="/">
+                      <img src="/Images/logo.webp" alt="Logo" class="h-10 md:h-12 xl:h-14">
+                  </a>
+              </div>
+  
+              <!-- Menu Button for Mobile -->
+              <button id="menu-btn" class="lg:hidden text-gray-600 focus:outline-none">
+                  <i class="fa-solid fa-bars text-2xl"></i>
+              </button>
+  
+              <!-- Navigation Links -->
+              <ul id="menu" class="hidden lg:flex space-x-6 text-black text-xl  ">
+                  <li><a href="/" class="hover:text-white  capitalize  hover:bg-[#015790]  xl:p-2">Home</a></li>
+                  <li><a href="/about-us.html" class="hover:text-white  capitalize  hover:bg-[#015790] xl:p-2">About</a></li>
+  
+                  <!-- Services Dropdown -->
+                  <li class="relative group">
+                      <button id="services-btn" class="hover:text-white hover:bg-[#015790]  flex items-center capitalize xl: py-0 p-2 ">
+                          Services
+                          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                              </path>
+                          </svg>
+                      </button>
+  
+                      <ul id="services-dropdown"
+                          class="absolute left-0 hidden bg-white shadow-lg min-w-[200px] mt-2 rounded-md z-50 border border-gray-200 text-sm fade-in">
+                          <li class="relative submenu-parent">
+                              <a href="#" class="block px-4 py-2 hover:text-white hover:bg-[#015790] flex justify-between items-center capitalize p-2">
+                                  Design
+                                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M9 5l7 7-7 7"></path>
+                                  </svg>
+                              </a>
+                              <ul class="submenu ">
+                                  <li><a href="/services/design/website-design.html"
+                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">Website Design</a>
+                                  </li>
+                                  <li><a href="/services/design/website-redesign.html"
+                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">Website
+                                          Resdesign</a></li>
+                                  <li><a href="/services/design/logo-design.html"
+                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">Logo Design</a>
+                                  </li>
+                                  <li><a href="/services/design/landing-page.html"
+                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">Landing Page</a>
+                                  </li>
+                                  <li><a href="/services/design/brochure-design.html"
+                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">Brochure
+                                          Design</a></li>
+                                  <li><a href="/services/design/banner-design.html"
+                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">Banner Design</a>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li class="relative submenu-parent">
+                              <a href="#" class="block px-4 py-2 hover:text-white hover:bg-[#015790] flex justify-between items-center">
+                                  Development
+                                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M9 5l7 7-7 7"></path>
+                                  </svg>
+                              </a>
+                              <ul class="submenu">
+                                  <li><a href="/services/development/web-development.html"
+                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">Web
+                                          Development</a></li>
+                                  <li><a href="/services/development/php-development.html"
+                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">PHP
+                                          Development</a></li>
+                                  <li><a href="/services/development/wordpress-development.html"
+                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">Wordpress
+                                          Development</a></li>
+                                  <li><a href="/services/development/dot-net-development.html"
+                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">.NET
+                                          Development</a></li>
+                                  <li><a href="/services/development/java-development.html"
+                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">Java
+                                          Development</a></li>
+                                  <li><a href="/services/development/react-development.html"
+                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">React
+                                          Development</a></li>
+                                  <li><a href="/services/development/magento-development.html"
+                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">Magento Ecommerce
+                                          Development</a></li>
+                              </ul>
+                          </li>
+                          <li class="relative submenu-parent">
+                              <a href="#" class="block px-4 py-2 hover:text-white hover:bg-[#015790] flex justify-between items-center">
+                                  Digital Marketing
+                                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M9 5l7 7-7 7"></path>
+                                  </svg>
+                              </a>
+                              <ul class="submenu">
+                                  <li><a href="/services/digital-marketing/search-engine-optimization.html"
+                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">Search Engine
+                                          Optimization</a></li>
+                                  <li><a href="/services/digital-marketing/social-media-optimization.html"
+                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">Social Media
+                                          Marketing</a></li>
+                                  <li><a href="/services/digital-marketing/bulk-sms-services.html"
+                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">Bulk SMS
+                                          Marketing</a></li>
+                                  <li><a href="/services/digital-marketing/content-writing.html"
+                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">Content
+                                          Marketing</a></li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </li>
+  
+                  <li><a href="/packages.html" class="hover:text-white  capitalize  hover:bg-[#015790]  xl:p-2">Packages</a></li>
+                  <li><a href="/contact-us.html" class="hover:text-white  capitalize  hover:bg-[#015790] xl:p-2">Contact Us</a></li>
+              </ul>
+  
+              <!-- Free Consultation Button -->
+              <a href="tel:+919212378780"
+                  class="hidden lg:inline-block bg-[#015790] text-white px-5 py-2 rounded-full hover:bg-purple-700 transition text-xl">
+                  Free Consultation <i class="fa-solid fa-headset"></i>
+              </a>
+          </div>
+  
+          <!-- Mobile Menu -->
+          <div id="mobile-menu"
+              class="hidden lg:hidden absolute top-16 left-0 w-full bg-white shadow-lg border-t border-[#015790]">
+              <ul class="flex flex-col space-y-4 py-4 px-6 text-gray-700 text-lg font-bold">
+                  <li><a href="/" class="hover:text-[#015790]">Home</a></li>
+                  <li><a href="/about-us.html" class="hover:text-[#015790]">About</a></li>
+  
+                  <!-- Services Dropdown for Mobile -->
+                  <li>
+                      <button id="mobile-dropdown-btn" class="hover:text-[#015790] flex items-center w-full text-left">
+                          Services
+                          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                              </path>
+                          </svg>
+                      </button>
+                      <ul id="mobile-dropdown" class="hidden flex-col bg-gray-100 mt-2 rounded-md">
+                          <!-- Design Submenu -->
+                          <li class="relative">
+                              <button class="mobile-submenu-btn w-full px-4 py-2  flex justify-between items-center">
+                                  Design
+                                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"></path>
+                                  </svg>
+                              </button>
+                              <ul class="hidden flex-col bg-gray-200 pl-8">
+                                  <li><a href="/services/design/website-design.html"
+                                          class="block px-4 py-2  whitespace-nowrap">Website Design</a></li>
+                                  <li><a href="/services/design/website-redesign.html"
+                                          class="block px-4 py-2  whitespace-nowrap">Website Resdesign</a></li>
+                                  <li><a href="/services/design/logo-design.html"
+                                          class="block px-4 py-2  whitespace-nowrap">Logo Design</a></li>
+                                  <li><a href="/services/design/landing-page.html"
+                                          class="block px-4 py-2  whitespace-nowrap">Landing Page</a></li>
+                                  <li><a href="/services/design/brochure-design.html"
+                                          class="block px-4 py-2  whitespace-nowrap">Brochure Design</a></li>
+                                  <li><a href="/services/design/banner-design.html"
+                                          class="block px-4 py-2  whitespace-nowrap">Banner Design</a></li>
+                              </ul>
+                          </li>
+  
+                          <!-- Development Submenu -->
+                          <li class="relative">
+                              <button class="mobile-submenu-btn w-full px-4 py-2  flex justify-between items-center">
+                                  Development
+                                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"></path>
+                                  </svg>
+                              </button>
+                              <ul class="hidden flex-col bg-gray-200 pl-8">
+                                  <li><a href="/services/development/web-development.html"
+                                          class="block px-4 py-2 whitespace-nowrap">Web Development</a></li>
+                                  <li><a href="/services/development/php-development.html"
+                                          class="block px-4 py-2  whitespace-nowrap">PHP Development</a></li>
+                                  <li><a href="/services/development/wordpress-development.html"
+                                          class="block px-4 py-2  whitespace-nowrap">Wordpress Development</a></li>
+                                  <li><a href="/services/development/dot-net-development.html"
+                                          class="block px-4 py-2  whitespace-nowrap">.NET Development</a></li>
+                                  <li><a href="/services/development/java-development.html"
+                                          class="block px-4 py-2  whitespace-nowrap">Java Development</a></li>
+                                  <li><a href="/services/development/react-development.html"
+                                          class="block px-4 py-2  whitespace-nowrap">React Development</a></li>
+                                  <li><a href="/services/development/magento-development.html"
+                                          class="block px-4 py-2  whitespace-nowrap">Magento Ecommerce Development</a>
+                                  </li>
+                              </ul>
+                          </li>
+  
+                          <!-- Digital Marketing Submenu -->
+                          <li class="relative">
+                              <button class="mobile-submenu-btn w-full px-4 py-2  flex justify-between items-center">
+                                  Digital Marketing
+                                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"></path>
+                                  </svg>
+                              </button>
+                              <ul class="hidden flex-col bg-gray-200 pl-8">
+                                  <li><a href="/services/digital-marketing/search-engine-optimization.html"
+                                          class="block px-4 py-2  whitespace-nowrap">Search Engine Optimization</a></li>
+                                  <li><a href="/services/digital-marketing/social-media-optimization.html"
+                                          class="block px-4 py-2  whitespace-nowrap">Social Media Marketing</a></li>
+                                  <li><a href="/services/digital-marketing/bulk-sms-services.html"
+                                          class="block px-4 py-2  whitespace-nowrap">Bulk SMS Marketing</a></li>
+                                  <li><a href="/services/digital-marketing/content-writing.html"
+                                          class="block px-4 py-2  whitespace-nowrap">Content Marketing</a></li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </li>
+  
+                  <li><a href="/packages.html" class="hover:text-[#015790]">Packages</a></li>
+                  <li><a href="/contact-us.html" class="hover:text-[#015790]">Contact Us</a></li>
+              </ul>
+          </div>
+      </nav>
 
-            <!-- Menu Button for Mobile -->
-            <button id="menu-btn" class="lg:hidden text-gray-600 focus:outline-none">
-                <i class="fa-solid fa-bars text-2xl"></i>
-            </button>
-
-            <!-- Navigation Links -->
-            <ul id="menu" class="hidden lg:flex space-x-6 text-gray-700 text-xl font-bold">
-                <li><a href="/" class="hover:text-purple-600">Home</a></li>
-                <li><a href="/about-us.html" class="hover:text-purple-600">About</a></li>
-
-                <!-- Services Dropdown -->
-                <li class="relative group">
-                    <button id="services-btn" class="hover:text-purple-600 flex items-center">
-                        Services
-                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
-                            </path>
-                        </svg>
-                    </button>
-
-                    <ul id="services-dropdown"
-                        class="absolute left-0 hidden bg-white shadow-lg min-w-[200px] mt-2 rounded-md z-50 border border-gray-200 text-sm fade-in">
-                        <li class="relative submenu-parent">
-                            <a href="#" class="block px-4 py-2 hover:bg-purple-100 flex justify-between items-center">
-                                Design
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
-                            <ul class="submenu">
-                                <li><a href="/services/design/website-design.html"
-                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Website Design</a>
-                                </li>
-                                <li><a href="/services/design/website-redesign.html"
-                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Website
-                                        Resdesign</a></li>
-                                <li><a href="/services/design/logo-design.html"
-                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Logo Design</a>
-                                </li>
-                                <li><a href="/services/design/landing-page.html"
-                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Landing Page</a>
-                                </li>
-                                <li><a href="/services/design/brochure-design.html"
-                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Brochure
-                                        Design</a></li>
-                                <li><a href="/services/design/banner-design.html"
-                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Banner Design</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="relative submenu-parent">
-                            <a href="#" class="block px-4 py-2 hover:bg-purple-100 flex justify-between items-center">
-                                Development
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
-                            <ul class="submenu">
-                                <li><a href="/services/development/web-development.html"
-                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Web
-                                        Development</a></li>
-                                <li><a href="/services/development/php-development.html"
-                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">PHP
-                                        Development</a></li>
-                                <li><a href="/services/development/wordpress-development.html"
-                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Wordpress
-                                        Development</a></li>
-                                <li><a href="/services/development/dot-net-development.html"
-                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">.NET
-                                        Development</a></li>
-                                <li><a href="/services/development/java-development.html"
-                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Java
-                                        Development</a></li>
-                                <li><a href="/services/development/react-development.html"
-                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">React
-                                        Development</a></li>
-                                <li><a href="/services/development/magento-development.html"
-                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Magento Ecommerce
-                                        Development</a></li>
-                            </ul>
-                        </li>
-                        <li class="relative submenu-parent">
-                            <a href="#" class="block px-4 py-2 hover:bg-purple-100 flex justify-between items-center">
-                                Digital Marketing
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
-                            <ul class="submenu">
-                                <li><a href="/services/digital-marketing/search-engine-optimization.html"
-                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Search Engine
-                                        Optimization</a></li>
-                                <li><a href="/services/digital-marketing/social-media-optimization.html"
-                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Social Media
-                                        Marketing</a></li>
-                                <li><a href="/services/digital-marketing/bulk-sms-services.html"
-                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Bulk SMS
-                                        Marketing</a></li>
-                                <li><a href="/services/digital-marketing/content-writing.html"
-                                        class="block px-4 py-2 hover:bg-purple-100 whitespace-nowrap">Content
-                                        Marketing</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-
-                <li><a href="/packages.html" class="hover:text-purple-600">Packages</a></li>
-                <li><a href="/contact-us.html" class="hover:text-purple-600">Contact Us</a></li>
-            </ul>
-
-            <!-- Free Consultation Button -->
-            <a href="tel:+919212378780"
-                class="hidden lg:inline-block bg-purple-600 text-white px-5 py-2 rounded-full hover:bg-purple-700 transition text-xl">
-                Free Consultation <i class="fa-solid fa-headset"></i>
-            </a>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobile-menu"
-            class="hidden lg:hidden absolute top-16 left-0 w-full bg-white shadow-lg border-t border-purple-600">
-            <ul class="flex flex-col space-y-4 py-4 px-6 text-gray-700 text-lg font-bold">
-                <li><a href="/" class="hover:text-purple-600">Home</a></li>
-                <li><a href="/about-us.html" class="hover:text-purple-600">About</a></li>
-
-                <!-- Services Dropdown for Mobile -->
-                <li>
-                    <button id="mobile-dropdown-btn" class="hover:text-purple-600 flex items-center w-full text-left">
-                        Services
-                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
-                            </path>
-                        </svg>
-                    </button>
-                    <ul id="mobile-dropdown" class="hidden flex-col bg-gray-100 mt-2 rounded-md">
-                        <!-- Design Submenu -->
-                        <li class="relative">
-                            <button class="mobile-submenu-btn w-full px-4 py-2  flex justify-between items-center">
-                                Design
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7"></path>
-                                </svg>
-                            </button>
-                            <ul class="hidden flex-col bg-gray-200 pl-8">
-                                <li><a href="/services/design/website-design.html"
-                                        class="block px-4 py-2  whitespace-nowrap">Website Design</a></li>
-                                <li><a href="/services/design/website-redesign.html"
-                                        class="block px-4 py-2  whitespace-nowrap">Website Resdesign</a></li>
-                                <li><a href="/services/design/logo-design.html"
-                                        class="block px-4 py-2  whitespace-nowrap">Logo Design</a></li>
-                                <li><a href="/services/design/landing-page.html"
-                                        class="block px-4 py-2  whitespace-nowrap">Landing Page</a></li>
-                                <li><a href="/services/design/brochure-design.html"
-                                        class="block px-4 py-2  whitespace-nowrap">Brochure Design</a></li>
-                                <li><a href="/services/design/banner-design.html"
-                                        class="block px-4 py-2  whitespace-nowrap">Banner Design</a></li>
-                            </ul>
-                        </li>   
-
-                        <!-- Development Submenu -->
-                        <li class="relative">
-                            <button class="mobile-submenu-btn w-full px-4 py-2  flex justify-between items-center">
-                                Development
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7"></path>
-                                </svg>
-                            </button>
-                            <ul class="hidden flex-col bg-gray-200 pl-8">
-                                <li><a href="/services/development/web-development.html"
-                                        class="block px-4 py-2 whitespace-nowrap">Web Development</a></li>
-                                <li><a href="/services/development/php-development.html"
-                                        class="block px-4 py-2  whitespace-nowrap">PHP Development</a></li>
-                                <li><a href="/services/development/wordpress-development.html"
-                                        class="block px-4 py-2  whitespace-nowrap">Wordpress Development</a></li>
-                                <li><a href="/services/development/dot-net-development.html"
-                                        class="block px-4 py-2  whitespace-nowrap">.NET Development</a></li>
-                                <li><a href="/services/development/java-development.html"
-                                        class="block px-4 py-2  whitespace-nowrap">Java Development</a></li>
-                                <li><a href="/services/development/react-development.html"
-                                        class="block px-4 py-2  whitespace-nowrap">React Development</a></li>
-                                <li><a href="/services/development/magento-development.html"
-                                        class="block px-4 py-2  whitespace-nowrap">Magento Ecommerce Development</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <!-- Digital Marketing Submenu -->
-                        <li class="relative">
-                            <button class="mobile-submenu-btn w-full px-4 py-2  flex justify-between items-center">
-                                Digital Marketing
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7"></path>
-                                </svg>
-                            </button>
-                            <ul class="hidden flex-col bg-gray-200 pl-8">
-                                <li><a href="/services/digital-marketing/search-engine-optimization.html"
-                                        class="block px-4 py-2  whitespace-nowrap">Search Engine Optimization</a></li>
-                                <li><a href="/services/digital-marketing/social-media-optimization.html"
-                                        class="block px-4 py-2  whitespace-nowrap">Social Media Marketing</a></li>
-                                <li><a href="/services/digital-marketing/bulk-sms-services.html"
-                                        class="block px-4 py-2  whitespace-nowrap">Bulk SMS Marketing</a></li>
-                                <li><a href="/services/digital-marketing/content-writing.html"
-                                        class="block px-4 py-2  whitespace-nowrap">Content Marketing</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-
-                <li><a href="/packages.html" class="hover:text-purple-600">Packages</a></li>
-                <li><a href="/contact-us.html" class="hover:text-purple-600">Contact Us</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <section class="bg-gradient-to-r from-[#0dd2e0] via-teal-700 to-[#0dd2e0] text-white py-16 px-6 text-center">
+    <section class="bg-gradient-to-r from-[#0dd2e0] via-teal-700 to-[#0dd2e0] text-white py-16 px-6 text-center mt-[12vh]">
 
 
 
@@ -265,7 +267,7 @@
         <!-- Buttons -->
         <div class="mt-8 flex justify-center gap-4 flex-wrap">
             <a href="/contact-us.html"
-                class="bg-purple-600 hover:bg-yellow-500 text-white font-semibold px-6 py-3 rounded-full shadow-md transition">
+                class="bg-[#015790] hover:bg-yellow-500 text-white font-semibold px-6 py-3 rounded-full shadow-md transition">
                 Contact Us
             </a>
             <a href="tel:+919212378780"
@@ -509,7 +511,7 @@
      
 
      <a href="https://wa.me/919212378780" target="_blank" aria-label="Chat on WhatsApp"
-     class="fixed bottom-5 right-5 z-50 w-16 h-16 bg-green-500 text-white rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-transform duration-300">
+     class="fixed bottom-5 left-5 z-50 w-16 h-16 bg-green-500 text-white rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-transform duration-300">
      <i class="fab fa-whatsapp text-3xl"></i>
  </a>
 
