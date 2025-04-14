@@ -1,3 +1,9 @@
+// Loader functionality
+window.addEventListener('load', function() {
+    const loader = document.querySelector('.loader');
+    loader.classList.add('hidden');
+});
+
 // Mobile menu toggle
 const menuBtn = document.getElementById('menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
