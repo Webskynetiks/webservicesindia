@@ -140,67 +140,24 @@ window.addEventListener('scroll', () => {
 
 
 
-            // Add JavaScript for filtering 
-        // filter for the servcies div in the hom page----------------//
-        document.addEventListener("DOMContentLoaded", function () {
-          const tabs = document.querySelectorAll(".service-tab");
-          const cards = document.querySelectorAll(".service-card");
-
-          // Show only design cards by default
-          cards.forEach((card) => {
-            if (card.classList.contains("design")) {
-              card.style.display = "block";
-            } else {
-              card.style.display = "none";
-            }
-          });
-
-          tabs.forEach((tab) => {
-            tab.addEventListener("click", () => {
-              // Remove active class from all tabs
-              tabs.forEach((t) => {
-                t.classList.remove("active", "bg-[#015790]", "text-white");
-                t.classList.add("bg-gray-200", "text-gray-700");
-              });
-
-              // Add active class to clicked tab
-              tab.classList.add("active", "bg-[#015790]", "text-white");
-              tab.classList.remove("bg-gray-200", "text-gray-700");
-
-              const category = tab.getAttribute("data-tab");
-
-              // Show/hide cards based on category
-              cards.forEach((card) => {
-                if (category === "all") {
-                  card.style.display = "block";
-                } else {
-                  if (card.classList.contains(category)) {
-                    card.style.display = "block";
-                  } else {
-                    card.style.display = "none";
-                  }
-                }
-              });
-            });
-          });
-        });
+         
 
 
 
 
   
 
-  window.addEventListener('DOMContentLoaded', () => {
-    const whatsappBtn = document.querySelector('a[href*="wa.me"]');
+  // window.addEventListener('DOMContentLoaded', () => {
+  //   const whatsappBtn = document.querySelector('a[href*="wa.me"]');
 
-    if (whatsappBtn) {
-      // Remove 'bottom-5' if it exists
-      whatsappBtn.classList.remove('bottom-5');
+  //   if (whatsappBtn) {
+  //     // Remove 'bottom-5' if it exists
+  //     whatsappBtn.classList.remove('bottom-5');
 
-      // Set position to 70% from the top
-      whatsappBtn.style.top = '60vh';
-    }
-  });
+  //     // Set position to 70% from the top
+  //     whatsappBtn.style.top = '60vh';
+  //   }
+  // });
 
 
 
