@@ -147,8 +147,8 @@ html, body {
 
   .swiper-button-next,
   .swiper-button-prev {
-      color: #4F46E5 !important;
-      background: rgba(177, 165, 165, 0.6);
+      color: #fff !important;
+      background: rgba(0, 0, 0, 0.349);
       width: 40px !important;
       height: 40px !important;
       border-radius: 50%;
