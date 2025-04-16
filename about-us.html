@@ -1,557 +1,958 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      About Us | WebServicesIndia - Creative Web Design & Development Team
+    </title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Web Services India</title>
+    <!-- Meta Description -->
+    <meta
+      name="description"
+      content="Learn about WebServicesIndia – a passionate team delivering top-notch web design, development, and digital marketing services tailored to your needs."
+    />
+
+    <!-- Meta Keywords -->
+    <meta
+      name="keywords"
+      content="about WebServicesIndia, web design team, website development company, digital agency India, web experts India"
+    />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://webservicesindia.info/about" />
+
+    <!-- Open Graph Tags -->
+    <meta
+      property="og:title"
+      content="About Us | WebServicesIndia - Creative Web Design & Development Team"
+    />
+    <meta
+      property="og:description"
+      content="Discover the team behind WebServicesIndia – experts in creative web solutions, digital marketing, and SEO services."
+    />
+    <meta
+      property="og:image"
+      content="https://webservicesindia.info/Images/logo.webp"
+    />
+    <!-- Change this to your team or about image if you have -->
+    <meta property="og:url" content="https://webservicesindia.info/about.html" />
+    <meta property="og:type" content="website" />
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
-        <!-- font awesome cdn -->
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-</head>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
 
-<body class="bg-gray-50 text-gray-800">
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="bg-gray-50 text-gray-800">
     <!-- Navbar -->
     <!-- Navigation Bar -->
 
-    <nav class="fixed top-0 left-0 right-0 bg-white shadow-md z-50 border-b-2 border-[#015790] ">
-        <div class="container mx-auto px-4 py-5 flex justify-between items-center">
-              <!-- Logo -->
-              <div class="flex items-center">
-                  <a href="/">
-                      <img src="/Images/logo.webp" alt="Logo" class="h-10 md:h-12 xl:h-14">
-                  </a>
-              </div>
-  
-              <!-- Menu Button for Mobile -->
-              <button id="menu-btn" class="lg:hidden text-gray-600 focus:outline-none">
-                  <i class="fa-solid fa-bars text-2xl"></i>
-              </button>
-  
-              <!-- Navigation Links -->
-              <ul id="menu" class="hidden lg:flex space-x-6 text-black text-xl  ">
-                  <li><a href="/" class="hover:text-white  capitalize  hover:bg-[#015790]  xl:p-2">Home</a></li>
-                  <li><a href="/about-us.html" class="hover:text-white  capitalize  hover:bg-[#015790] xl:p-2">About</a></li>
-  
-                  <!-- Services Dropdown -->
-                  <li class="relative group">
-                      <button id="services-btn" class="hover:text-white hover:bg-[#015790]  flex items-center capitalize xl: py-0 p-2 ">
-                          Services
-                          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
-                              </path>
-                          </svg>
-                      </button>
-  
-                      <ul id="services-dropdown"
-                          class="absolute left-0 hidden bg-white shadow-lg min-w-[200px] mt-2 rounded-md z-50 border border-gray-200 text-sm fade-in">
-                          <li class="relative submenu-parent">
-                              <a href="#" class="block px-4 py-2 hover:text-white hover:bg-[#015790] flex justify-between items-center capitalize p-2">
-                                  Design
-                                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M9 5l7 7-7 7"></path>
-                                  </svg>
-                              </a>
-                              <ul class="submenu ">
-                                  <li><a href="/services/design/website-design.html"
-                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">Website Design</a>
-                                  </li>
-                                  <li><a href="/services/design/website-redesign.html"
-                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">Website
-                                          Resdesign</a></li>
-                                  <li><a href="/services/design/logo-design.html"
-                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">Logo Design</a>
-                                  </li>
-                                  <li><a href="/services/design/landing-page.html"
-                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">Landing Page</a>
-                                  </li>
-                                  <li><a href="/services/design/brochure-design.html"
-                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">Brochure
-                                          Design</a></li>
-                                  <li><a href="/services/design/banner-design.html"
-                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">Banner Design</a>
-                                  </li>
-                              </ul>
-                          </li>
-                          <li class="relative submenu-parent">
-                              <a href="#" class="block px-4 py-2 hover:text-white hover:bg-[#015790] flex justify-between items-center">
-                                  Development
-                                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M9 5l7 7-7 7"></path>
-                                  </svg>
-                              </a>
-                              <ul class="submenu">
-                                  <li><a href="/services/development/web-development.html"
-                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">Web
-                                          Development</a></li>
-                                  <li><a href="/services/development/php-development.html"
-                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">PHP
-                                          Development</a></li>
-                                  <li><a href="/services/development/wordpress-development.html"
-                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">Wordpress
-                                          Development</a></li>
-                                  <li><a href="/services/development/dot-net-development.html"
-                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">.NET
-                                          Development</a></li>
-                                  <li><a href="/services/development/java-development.html"
-                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">Java
-                                          Development</a></li>
-                                  <li><a href="/services/development/react-development.html"
-                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">React
-                                          Development</a></li>
-                                  <li><a href="/services/development/magento-development.html"
-                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">Magento Ecommerce
-                                          Development</a></li>
-                              </ul>
-                          </li>
-                          <li class="relative submenu-parent">
-                              <a href="#" class="block px-4 py-2 hover:text-white hover:bg-[#015790] flex justify-between items-center">
-                                  Digital Marketing
-                                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M9 5l7 7-7 7"></path>
-                                  </svg>
-                              </a>
-                              <ul class="submenu">
-                                  <li><a href="/services/digital-marketing/search-engine-optimization.html"
-                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">Search Engine
-                                          Optimization</a></li>
-                                  <li><a href="/services/digital-marketing/social-media-optimization.html"
-                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">Social Media
-                                          Marketing</a></li>
-                                  <li><a href="/services/digital-marketing/bulk-sms-services.html"
-                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">Bulk SMS
-                                          Marketing</a></li>
-                                  <li><a href="/services/digital-marketing/content-writing.html"
-                                          class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap">Content
-                                          Marketing</a></li>
-                              </ul>
-                          </li>
-                      </ul>
-                  </li>
-  
-                  <li><a href="/packages.html" class="hover:text-white  capitalize  hover:bg-[#015790]  xl:p-2">Packages</a></li>
-                  <li><a href="/contact-us.html" class="hover:text-white  capitalize  hover:bg-[#015790] xl:p-2">Contact Us</a></li>
-              </ul>
-  
-              <!-- Free Consultation Button -->
-              <a href="tel:+919212378780"
-                  class="hidden lg:inline-block bg-[#015790] text-white px-5 py-2 rounded-full hover:bg-purple-700 transition text-xl">
-                  Free Consultation <i class="fa-solid fa-headset"></i>
-              </a>
-          </div>
-  
-          <!-- Mobile Menu -->
-          <div id="mobile-menu"
-              class="hidden lg:hidden absolute top-16 left-0 w-full bg-white shadow-lg border-t border-[#015790]">
-              <ul class="flex flex-col space-y-4 py-4 px-6 text-gray-700 text-lg font-bold">
-                  <li><a href="/" class="hover:text-[#015790]">Home</a></li>
-                  <li><a href="/about-us.html" class="hover:text-[#015790]">About</a></li>
-  
-                  <!-- Services Dropdown for Mobile -->
+    <nav
+      class="fixed top-0 left-0 right-0 bg-white shadow-md z-50 border-b-2 border-[#015790]"
+    >
+      <div
+        class="container mx-auto px-4 py-5 flex justify-between items-center"
+      >
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="/">
+            <img
+              src="/Images/logo.webp"
+              alt="Logo"
+              class="h-10 md:h-12 xl:h-14"
+            />
+          </a>
+        </div>
+
+        <!-- Menu Button for Mobile -->
+        <button
+          id="menu-btn"
+          class="lg:hidden text-gray-600 focus:outline-none"
+        >
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+
+        <!-- Navigation Links -->
+        <ul id="menu" class="hidden lg:flex space-x-6 text-black text-xl">
+          <li>
+            <a
+              href="/"
+              class="hover:text-white capitalize hover:bg-[#015790] xl:p-2"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="/about-us.html"
+              class="hover:text-white capitalize hover:bg-[#015790] xl:p-2"
+              >About</a
+            >
+          </li>
+
+          <!-- Services Dropdown -->
+          <li class="relative group">
+            <button
+              id="services-btn"
+              class="hover:text-white hover:bg-[#015790] flex items-center capitalize xl: py-0 p-2"
+            >
+              Services
+              <svg
+                class="w-4 h-4 ml-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+
+            <ul
+              id="services-dropdown"
+              class="absolute left-0 hidden bg-white shadow-lg min-w-[200px] mt-2 rounded-md z-50 border border-gray-200 text-sm fade-in"
+            >
+              <li class="relative submenu-parent">
+                <a
+                  href="#"
+                  class="block px-4 py-2 hover:text-white hover:bg-[#015790] flex justify-between items-center capitalize p-2"
+                >
+                  Design
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    ></path>
+                  </svg>
+                </a>
+                <ul class="submenu">
                   <li>
-                      <button id="mobile-dropdown-btn" class="hover:text-[#015790] flex items-center w-full text-left">
-                          Services
-                          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
-                              </path>
-                          </svg>
-                      </button>
-                      <ul id="mobile-dropdown" class="hidden flex-col bg-gray-100 mt-2 rounded-md">
-                          <!-- Design Submenu -->
-                          <li class="relative">
-                              <button class="mobile-submenu-btn w-full px-4 py-2  flex justify-between items-center">
-                                  Design
-                                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M19 9l-7 7-7-7"></path>
-                                  </svg>
-                              </button>
-                              <ul class="hidden flex-col bg-gray-200 pl-8">
-                                  <li><a href="/services/design/website-design.html"
-                                          class="block px-4 py-2  whitespace-nowrap">Website Design</a></li>
-                                  <li><a href="/services/design/website-redesign.html"
-                                          class="block px-4 py-2  whitespace-nowrap">Website Resdesign</a></li>
-                                  <li><a href="/services/design/logo-design.html"
-                                          class="block px-4 py-2  whitespace-nowrap">Logo Design</a></li>
-                                  <li><a href="/services/design/landing-page.html"
-                                          class="block px-4 py-2  whitespace-nowrap">Landing Page</a></li>
-                                  <li><a href="/services/design/brochure-design.html"
-                                          class="block px-4 py-2  whitespace-nowrap">Brochure Design</a></li>
-                                  <li><a href="/services/design/banner-design.html"
-                                          class="block px-4 py-2  whitespace-nowrap">Banner Design</a></li>
-                              </ul>
-                          </li>
-  
-                          <!-- Development Submenu -->
-                          <li class="relative">
-                              <button class="mobile-submenu-btn w-full px-4 py-2  flex justify-between items-center">
-                                  Development
-                                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M19 9l-7 7-7-7"></path>
-                                  </svg>
-                              </button>
-                              <ul class="hidden flex-col bg-gray-200 pl-8">
-                                  <li><a href="/services/development/web-development.html"
-                                          class="block px-4 py-2 whitespace-nowrap">Web Development</a></li>
-                                  <li><a href="/services/development/php-development.html"
-                                          class="block px-4 py-2  whitespace-nowrap">PHP Development</a></li>
-                                  <li><a href="/services/development/wordpress-development.html"
-                                          class="block px-4 py-2  whitespace-nowrap">Wordpress Development</a></li>
-                                  <li><a href="/services/development/dot-net-development.html"
-                                          class="block px-4 py-2  whitespace-nowrap">.NET Development</a></li>
-                                  <li><a href="/services/development/java-development.html"
-                                          class="block px-4 py-2  whitespace-nowrap">Java Development</a></li>
-                                  <li><a href="/services/development/react-development.html"
-                                          class="block px-4 py-2  whitespace-nowrap">React Development</a></li>
-                                  <li><a href="/services/development/magento-development.html"
-                                          class="block px-4 py-2  whitespace-nowrap">Magento Ecommerce Development</a>
-                                  </li>
-                              </ul>
-                          </li>
-  
-                          <!-- Digital Marketing Submenu -->
-                          <li class="relative">
-                              <button class="mobile-submenu-btn w-full px-4 py-2  flex justify-between items-center">
-                                  Digital Marketing
-                                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M19 9l-7 7-7-7"></path>
-                                  </svg>
-                              </button>
-                              <ul class="hidden flex-col bg-gray-200 pl-8">
-                                  <li><a href="/services/digital-marketing/search-engine-optimization.html"
-                                          class="block px-4 py-2  whitespace-nowrap">Search Engine Optimization</a></li>
-                                  <li><a href="/services/digital-marketing/social-media-optimization.html"
-                                          class="block px-4 py-2  whitespace-nowrap">Social Media Marketing</a></li>
-                                  <li><a href="/services/digital-marketing/bulk-sms-services.html"
-                                          class="block px-4 py-2  whitespace-nowrap">Bulk SMS Marketing</a></li>
-                                  <li><a href="/services/digital-marketing/content-writing.html"
-                                          class="block px-4 py-2  whitespace-nowrap">Content Marketing</a></li>
-                              </ul>
-                          </li>
-                      </ul>
+                    <a
+                      href="/services/design/website-design.html"
+                      class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap"
+                      >Website Design</a
+                    >
                   </li>
-  
-                  <li><a href="/packages.html" class="hover:text-[#015790]">Packages</a></li>
-                  <li><a href="/contact-us.html" class="hover:text-[#015790]">Contact Us</a></li>
-              </ul>
-          </div>
-      </nav>
+                  <li>
+                    <a
+                      href="/services/design/website-redesign.html"
+                      class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap"
+                      >Website Resdesign</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/services/design/logo-design.html"
+                      class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap"
+                      >Logo Design</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/services/design/landing-page.html"
+                      class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap"
+                      >Landing Page</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/services/design/brochure-design.html"
+                      class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap"
+                      >Brochure Design</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/services/design/banner-design.html"
+                      class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap"
+                      >Banner Design</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="relative submenu-parent">
+                <a
+                  href="#"
+                  class="block px-4 py-2 hover:text-white hover:bg-[#015790] flex justify-between items-center"
+                >
+                  Development
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    ></path>
+                  </svg>
+                </a>
+                <ul class="submenu">
+                  <li>
+                    <a
+                      href="/services/development/web-development.html"
+                      class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap"
+                      >Web Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/services/development/php-development.html"
+                      class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap"
+                      >PHP Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/services/development/wordpress-development.html"
+                      class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap"
+                      >Wordpress Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/services/development/dot-net-development.html"
+                      class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap"
+                      >.NET Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/services/development/java-development.html"
+                      class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap"
+                      >Java Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/services/development/react-development.html"
+                      class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap"
+                      >React Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/services/development/magento-development.html"
+                      class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap"
+                      >Magento Ecommerce Development</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="relative submenu-parent">
+                <a
+                  href="#"
+                  class="block px-4 py-2 hover:text-white hover:bg-[#015790] flex justify-between items-center"
+                >
+                  Digital Marketing
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    ></path>
+                  </svg>
+                </a>
+                <ul class="submenu">
+                  <li>
+                    <a
+                      href="/services/digital-marketing/search-engine-optimization.html"
+                      class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap"
+                      >Search Engine Optimization</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/services/digital-marketing/social-media-optimization.html"
+                      class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap"
+                      >Social Media Marketing</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/services/digital-marketing/bulk-sms-services.html"
+                      class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap"
+                      >Bulk SMS Marketing</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/services/digital-marketing/content-writing.html"
+                      class="block px-4 py-2 hover:text-white hover:bg-[#015790] whitespace-nowrap"
+                      >Content Marketing</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
 
+          <li>
+            <a
+              href="/packages.html"
+              class="hover:text-white capitalize hover:bg-[#015790] xl:p-2"
+              >Packages</a
+            >
+          </li>
+          <li>
+            <a
+              href="/contact-us.html"
+              class="hover:text-white capitalize hover:bg-[#015790] xl:p-2"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
 
+        <!-- Free Consultation Button -->
+        <a
+          href="tel:+919212378780"
+          class="hidden lg:inline-block bg-[#015790] text-white px-5 py-2 rounded-full hover:bg-purple-700 transition text-xl"
+        >
+          Free Consultation <i class="fa-solid fa-headset"></i>
+        </a>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden lg:hidden absolute top-16 left-0 w-full bg-white shadow-lg border-t border-[#015790]"
+      >
+        <ul
+          class="flex flex-col space-y-4 py-4 px-6 text-gray-700 text-lg font-bold"
+        >
+          <li><a href="/" class="hover:text-[#015790]">Home</a></li>
+          <li>
+            <a href="/about-us.html" class="hover:text-[#015790]">About</a>
+          </li>
+
+          <!-- Services Dropdown for Mobile -->
+          <li>
+            <button
+              id="mobile-dropdown-btn"
+              class="hover:text-[#015790] flex items-center w-full text-left"
+            >
+              Services
+              <svg
+                class="w-4 h-4 ml-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <ul
+              id="mobile-dropdown"
+              class="hidden flex-col bg-gray-100 mt-2 rounded-md"
+            >
+              <!-- Design Submenu -->
+              <li class="relative">
+                <button
+                  class="mobile-submenu-btn w-full px-4 py-2 flex justify-between items-center"
+                >
+                  Design
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+                <ul class="hidden flex-col bg-gray-200 pl-8">
+                  <li>
+                    <a
+                      href="/services/design/website-design.html"
+                      class="block px-4 py-2 whitespace-nowrap"
+                      >Website Design</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/services/design/website-redesign.html"
+                      class="block px-4 py-2 whitespace-nowrap"
+                      >Website Resdesign</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/services/design/logo-design.html"
+                      class="block px-4 py-2 whitespace-nowrap"
+                      >Logo Design</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/services/design/landing-page.html"
+                      class="block px-4 py-2 whitespace-nowrap"
+                      >Landing Page</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/services/design/brochure-design.html"
+                      class="block px-4 py-2 whitespace-nowrap"
+                      >Brochure Design</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/services/design/banner-design.html"
+                      class="block px-4 py-2 whitespace-nowrap"
+                      >Banner Design</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Development Submenu -->
+              <li class="relative">
+                <button
+                  class="mobile-submenu-btn w-full px-4 py-2 flex justify-between items-center"
+                >
+                  Development
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+                <ul class="hidden flex-col bg-gray-200 pl-8">
+                  <li>
+                    <a
+                      href="/services/development/web-development.html"
+                      class="block px-4 py-2 whitespace-nowrap"
+                      >Web Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/services/development/php-development.html"
+                      class="block px-4 py-2 whitespace-nowrap"
+                      >PHP Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/services/development/wordpress-development.html"
+                      class="block px-4 py-2 whitespace-nowrap"
+                      >Wordpress Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/services/development/dot-net-development.html"
+                      class="block px-4 py-2 whitespace-nowrap"
+                      >.NET Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/services/development/java-development.html"
+                      class="block px-4 py-2 whitespace-nowrap"
+                      >Java Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/services/development/react-development.html"
+                      class="block px-4 py-2 whitespace-nowrap"
+                      >React Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/services/development/magento-development.html"
+                      class="block px-4 py-2 whitespace-nowrap"
+                      >Magento Ecommerce Development</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Digital Marketing Submenu -->
+              <li class="relative">
+                <button
+                  class="mobile-submenu-btn w-full px-4 py-2 flex justify-between items-center"
+                >
+                  Digital Marketing
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+                <ul class="hidden flex-col bg-gray-200 pl-8">
+                  <li>
+                    <a
+                      href="/services/digital-marketing/search-engine-optimization.html"
+                      class="block px-4 py-2 whitespace-nowrap"
+                      >Search Engine Optimization</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/services/digital-marketing/social-media-optimization.html"
+                      class="block px-4 py-2 whitespace-nowrap"
+                      >Social Media Marketing</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/services/digital-marketing/bulk-sms-services.html"
+                      class="block px-4 py-2 whitespace-nowrap"
+                      >Bulk SMS Marketing</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/services/digital-marketing/content-writing.html"
+                      class="block px-4 py-2 whitespace-nowrap"
+                      >Content Marketing</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="/packages.html" class="hover:text-[#015790]">Packages</a>
+          </li>
+          <li>
+            <a href="/contact-us.html" class="hover:text-[#015790]"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
 
     <!-- Our Story Section -->
     <section class="py-16 mt-[10vh]">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col flex-col-reverse md:flex-row items-center gap-12">
-                <div class="md:w-1/2">
-                    <h2 class="text-3xl font-bold mb-6">Our Story</h2>
-                    <p class="text-black  mb-4">Founded in 2010, Web Services India began with a simple
-                        mission: to
-                        help businesses thrive in the digital world. What started as a small team of passionate
-                        developers has grown into a comprehensive digital agency trusted by companies across India and
-                        beyond.</p>
-                        <p class="text-black mb-4 ">Over the years, we've expanded our services to cover all
-                        aspects of
-                        the digital landscape while maintaining our commitment to quality, innovation, and client
-                        satisfaction. Our journey has been defined by continuous learning and adaptation to the
-                        ever-evolving digital environment.</p>
-                    <p class="text-black ">Today, we're proud to be the digital partner of choice for
-                        startups,
-                        established businesses, and enterprises looking to make their mark online.</p>
-                </div>
-                <div class="md:w-1/2">
-                    <img loading="lazy" src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                        alt="Team collaboration" class="rounded-lg shadow-xl w-full h-auto">
-                </div>
-            </div>
+      <div class="container mx-auto px-6">
+        <div
+          class="flex flex-col flex-col-reverse md:flex-row items-center gap-12"
+        >
+          <div class="md:w-1/2">
+            <h2 class="text-3xl font-bold mb-6">Our Story</h2>
+            <p class="text-black mb-4">
+              Founded in 2010, Web Services India began with a simple mission:
+              to help businesses thrive in the digital world. What started as a
+              small team of passionate developers has grown into a comprehensive
+              digital agency trusted by companies across India and beyond.
+            </p>
+            <p class="text-black mb-4">
+              Over the years, we've expanded our services to cover all aspects
+              of the digital landscape while maintaining our commitment to
+              quality, innovation, and client satisfaction. Our journey has been
+              defined by continuous learning and adaptation to the ever-evolving
+              digital environment.
+            </p>
+            <p class="text-black">
+              Today, we're proud to be the digital partner of choice for
+              startups, established businesses, and enterprises looking to make
+              their mark online.
+            </p>
+          </div>
+          <div class="md:w-1/2">
+            <img
+              loading="lazy"
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              alt="Team collaboration"
+              class="rounded-lg shadow-xl w-full h-auto"
+            />
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="bg-gray-100 py-12 px-6 md:px-16">
-        <div class="container mx-auto flex flex-col md:flex-row items-center gap-12">
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center gap-12"
+      >
+        <!-- Left Image -->
+        <div class="md:w-1/2">
+          <img
+            loading="lazy"
+            src="Images/digital-marketing.webp"
+            alt="Creating Smart Future"
+            class="w-full max-w-md mx-auto rounded-lg shadow-lg"
+          />
+        </div>
 
-            <!-- Left Image -->
-            <div class="md:w-1/2">
-                        <img loading="lazy" src="Images/digital-marketing.webp" alt="Creating Smart Future"
-                    class="w-full max-w-md mx-auto rounded-lg shadow-lg">
-            </div>
+        <!-- Right Content -->
+        <div class="md:w-1/2">
+          <!-- Heading -->
+          <h2 class="text-4xl font-extrabold text-gray-900">
+            <span class="text-black">What </span
+            ><span class="text-green-600">We Do?</span>
+          </h2>
+          <div class="w-20 h-1 bg-yellow-400 mt-2 mb-6"></div>
 
-            <!-- Right Content -->
-            <div class="md:w-1/2">
-                <!-- Heading -->
-                <h2 class="text-4xl font-extrabold text-gray-900">
-                    <span class="text-black">What </span><span class="text-green-600">We Do?</span>
-                </h2>
-                <div class="w-20 h-1 bg-yellow-400 mt-2 mb-6"></div>
-
-                <!-- Paragraph -->
-                <p class="text-black text-justify">
-                    Web Solutions, located in Noida, Uttar Pradesh, is a comprehensive digital agency offering a wide
-                    range of services including website design and development, graphic design, SEO, SMO, content
-                    writing, and e-commerce solutions. They specialize in creating responsive, user-friendly websites
-                    and visually appealing branding materials like logos and brochures. Their digital marketing services
-                    focus on improving search engine rankings and enhancing brand visibility across social media
-                    platforms. Additionally, they develop customized online stores with secure payment integration. With
-                    a commitment to quality and results, Shrishti Softech helps businesses establish a strong online
-                    presence and achieve their growth objectives.
-                    <!-- <p class="text-gray-600 leading-relaxed mt-4">
+          <!-- Paragraph -->
+          <p class="text-black text-justify">
+            Web Solutions, located in Noida, Uttar Pradesh, is a comprehensive
+            digital agency offering a wide range of services including website
+            design and development, graphic design, SEO, SMO, content writing,
+            and e-commerce solutions. They specialize in creating responsive,
+            user-friendly websites and visually appealing branding materials
+            like logos and brochures. Their digital marketing services focus on
+            improving search engine rankings and enhancing brand visibility
+            across social media platforms. Additionally, they develop customized
+            online stores with secure payment integration. With a commitment to
+            quality and results, Shrishti Softech helps businesses establish a
+            strong online presence and achieve their growth objectives.
+            <!-- <p class="text-gray-600 leading-relaxed mt-4">
               From marketing events like Auto Expo - Components and MTV Unplugged to creating some incredible ROAS (Return on ad spends) for eCommerce brands, our team loves to be creative and strategic about different lines of businesses. We won the 'Best Digital Innovation' award at the ACT summit in Pune, where our digital activation campaign for ACMA Safer Workplaces won accolades from auto component OEMs. We are hungry for creativity and passionate about driving results. Our clients below can attest to our efforts!
             </p> -->
-            </div>
-
+          </p>
         </div>
+      </div>
     </section>
-
-    
-
 
     <!-- Mission & Values -->
     <section class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6 lg:px-20">
-            <!-- Section Header -->
-            <h2 class="text-4xl font-extrabold text-center text-black mb-4">Our Mission & Values</h2>
-            <p class="text-center text-black max-w-2xl mx-auto mb-12">
-                Discover what drives us and how our principles shape the digital experiences we create.
-            </p>
+      <div class="container mx-auto px-6 lg:px-20">
+        <!-- Section Header -->
+        <h2 class="text-4xl font-extrabold text-center text-black mb-4">
+          Our Mission & Values
+        </h2>
+        <p class="text-center text-black max-w-2xl mx-auto mb-12">
+          Discover what drives us and how our principles shape the digital
+          experiences we create.
+        </p>
 
-            <!-- Cards Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-
-                <!-- Mission Card -->
-                <div
-                    class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.03] border-t-4 border-blue-600">
-                    <div class="text-blue-600 mb-5 text-center">
-                        <i class="fas fa-bullseye text-5xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-semibold mb-4 text-black text-center">Our Goal</h3>
-                    <p class="text-black leading-relaxed">
-                        Our primary aim is to stick with our commitments which we have done with our clients. Our target
-                        is to never break our commitments at any cost. We think our commitments are our strength. We
-                        handover the completed projects to our clients with their satisfaction. </p>
-                </div>
-
-                <!-- Vision Card -->
-                <div
-                    class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.03] border-t-4 border-green-500">
-                    <div class="text-green-500 mb-5 text-center">
-                        <i class="fas fa-eye text-5xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-semibold mb-4 text-black text-center">Our Vision</h3>
-                    <p class="text-black leading-relaxed">
-                        To be the leading digital transformation partner for businesses, known for our expertise,
-                        reliability, and forward-thinking approach to digital challenges.
-                    </p>
-                </div>
-
-                <!-- Values Card -->
-                <div
-                    class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.03] border-t-4 border-pink-500">
-                    <div class="text-pink-500 mb-5 text-center">
-                        <i class="fas fa-heart text-5xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-semibold mb-4 text-black text-center">Our Values</h3>
-                                <p class="text-black leading-relaxed">
-                        We believe in excellence, innovation, integrity, collaboration, and client-centricity as the
-                        guiding principles that define our work and relationships.
-                    </p>
-                </div>
-
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <!-- Mission Card -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.03] border-t-4 border-blue-600"
+          >
+            <div class="text-blue-600 mb-5 text-center">
+              <i class="fas fa-bullseye text-5xl"></i>
             </div>
+            <h3 class="text-2xl font-semibold mb-4 text-black text-center">
+              Our Goal
+            </h3>
+            <p class="text-black leading-relaxed">
+              Our primary aim is to stick with our commitments which we have
+              done with our clients. Our target is to never break our
+              commitments at any cost. We think our commitments are our
+              strength. We handover the completed projects to our clients with
+              their satisfaction.
+            </p>
+          </div>
+
+          <!-- Vision Card -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.03] border-t-4 border-green-500"
+          >
+            <div class="text-green-500 mb-5 text-center">
+              <i class="fas fa-eye text-5xl"></i>
+            </div>
+            <h3 class="text-2xl font-semibold mb-4 text-black text-center">
+              Our Vision
+            </h3>
+            <p class="text-black leading-relaxed">
+              To be the leading digital transformation partner for businesses,
+              known for our expertise, reliability, and forward-thinking
+              approach to digital challenges.
+            </p>
+          </div>
+
+          <!-- Values Card -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.03] border-t-4 border-pink-500"
+          >
+            <div class="text-pink-500 mb-5 text-center">
+              <i class="fas fa-heart text-5xl"></i>
+            </div>
+            <h3 class="text-2xl font-semibold mb-4 text-black text-center">
+              Our Values
+            </h3>
+            <p class="text-black leading-relaxed">
+              We believe in excellence, innovation, integrity, collaboration,
+              and client-centricity as the guiding principles that define our
+              work and relationships.
+            </p>
+          </div>
         </div>
-                    </section>
+      </div>
+    </section>
 
-
-   
-
-   <!-- why chose us section -->
-   <section class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-6 text-center">
+    <!-- why chose us section -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-6 text-center">
         <h2 class="text-4xl font-bold text-gray-900 mb-8">Why Choose Us</h2>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-
-            <!-- Timely Delivery -->
-            <div
-                class="bg-white border border-gray-200 rounded-2xl p-6 transition-transform hover:scale-105 hover:shadow-2xl  border-2 border-[#015790]">
-                <div class="mb-4 text-indigo-600">
-                    <i class="fa-solid fa-clock text-5xl"></i>
-                </div>
-                <h3 class="text-xl font-semibold mb-2">Timely Delivery</h3>
-                <p class="text-black  text-justify">We consistently deliver projects on time without compromising
-                    on quality. Our commitment to excellence ensures every milestone is met with precision,
-                    maintaining high standards throughout the development process.</p>
+          <!-- Timely Delivery -->
+          <div
+            class="bg-white border border-gray-200 rounded-2xl p-6 transition-transform hover:scale-105 hover:shadow-2xl border-2 border-[#015790]"
+          >
+            <div class="mb-4 text-indigo-600">
+              <i class="fa-solid fa-clock text-5xl"></i>
             </div>
+            <h3 class="text-xl font-semibold mb-2">Timely Delivery</h3>
+            <p class="text-black text-justify">
+              We consistently deliver projects on time without compromising on
+              quality. Our commitment to excellence ensures every milestone is
+              met with precision, maintaining high standards throughout the
+              development process.
+            </p>
+          </div>
 
-            <!-- Custom Solutions -->
-            <div
-                class="bg-white border border-gray-200 rounded-2xl p-6 transition-transform hover:scale-105 hover:shadow-2xl border-2 border-[#015790]">
-                <div class="mb-4 text-indigo-600">
-                    <i class="fa-solid fa-gear text-5xl"></i>
-                </div>
-                <h3 class="text-xl font-semibold mb-2">Custom Solutions</h3>
-                <p class="text-black text-justify">We understand that every business is unique, which is why we
-                    design solutions that are fully customized to your goals, challenges, and workflows. From
-                    strategy to execution, our approach ensures that you get precisely what your business needs to
-                    grow, scale, and succeed—nothing generic, everything tailored.
-
-                    .</p>
+          <!-- Custom Solutions -->
+          <div
+            class="bg-white border border-gray-200 rounded-2xl p-6 transition-transform hover:scale-105 hover:shadow-2xl border-2 border-[#015790]"
+          >
+            <div class="mb-4 text-indigo-600">
+              <i class="fa-solid fa-gear text-5xl"></i>
             </div>
+            <h3 class="text-xl font-semibold mb-2">Custom Solutions</h3>
+            <p class="text-black text-justify">
+              We understand that every business is unique, which is why we
+              design solutions that are fully customized to your goals,
+              challenges, and workflows. From strategy to execution, our
+              approach ensures that you get precisely what your business needs
+              to grow, scale, and succeed—nothing generic, everything tailored.
+              .
+            </p>
+          </div>
 
-            <!-- Proven Expertise -->
-            <div
-                class="bg-white border border-gray-200 rounded-2xl p-6 transition-transform hover:scale-105 hover:shadow-2xl border-2 border-[#015790]">
-                <div class="mb-4 text-indigo-600">
-                    <i class="fa-solid fa-circle-check text-5xl"></i>
-                </div>
-                <h3 class="text-xl font-semibold mb-2">Proven Expertise</h3>
-                <p class="text-black text-justify">With years of hands-on experience and a track record of
-                    successful project deliveries, our team brings deep industry knowledge and technical excellence
-                    to every engagement. We turn challenges into results with confidence and precision.
-
-                </p>
+          <!-- Proven Expertise -->
+          <div
+            class="bg-white border border-gray-200 rounded-2xl p-6 transition-transform hover:scale-105 hover:shadow-2xl border-2 border-[#015790]"
+          >
+            <div class="mb-4 text-indigo-600">
+              <i class="fa-solid fa-circle-check text-5xl"></i>
             </div>
+            <h3 class="text-xl font-semibold mb-2">Proven Expertise</h3>
+            <p class="text-black text-justify">
+              With years of hands-on experience and a track record of successful
+              project deliveries, our team brings deep industry knowledge and
+              technical excellence to every engagement. We turn challenges into
+              results with confidence and precision.
+            </p>
+          </div>
 
-            <!-- Quality Assurance -->
-            <div
-                class="bg-white border border-gray-200 rounded-2xl p-6 transition-transform hover:scale-105 hover:shadow-2xl border-2 border-[#015790]">
-                <div class="mb-4 text-indigo-600">
-                    <i class="fa-solid fa-shield text-5xl "></i>
-                    <!-- <i class="fa-solid fa-shield"></i> -->
-                </div>
-                <h3 class="text-xl font-semibold mb-2">Quality Assurance</h3>
-                <p class="text-black text-justify">Quality is at the core of everything we do. Our dedicated QA
-                    processes involve rigorous testing, continuous monitoring, and detailed validation to ensure
-                    every deliverable is reliable, secure, and performs flawlessly. From code reviews to end-user
-                    testing, we leave no room for compromise.
-
-                </p>
+          <!-- Quality Assurance -->
+          <div
+            class="bg-white border border-gray-200 rounded-2xl p-6 transition-transform hover:scale-105 hover:shadow-2xl border-2 border-[#015790]"
+          >
+            <div class="mb-4 text-indigo-600">
+              <i class="fa-solid fa-shield text-5xl"></i>
+              <!-- <i class="fa-solid fa-shield"></i> -->
             </div>
+            <h3 class="text-xl font-semibold mb-2">Quality Assurance</h3>
+            <p class="text-black text-justify">
+              Quality is at the core of everything we do. Our dedicated QA
+              processes involve rigorous testing, continuous monitoring, and
+              detailed validation to ensure every deliverable is reliable,
+              secure, and performs flawlessly. From code reviews to end-user
+              testing, we leave no room for compromise.
+            </p>
+          </div>
 
-            <!-- Transparent Communication -->
-            <div
-                class="bg-white border border-gray-200 rounded-2xl p-6 transition-transform hover:scale-105 hover:shadow-2xl border-2 border-[#015790]">
-                <div class="mb-4 text-indigo-600">
-                    <i class="fa-solid fa-earth-americas text-5xl"></i>
-                </div>
-                <h3 class="text-xl font-semibold mb-2">Globally Recognised</h3>
-                <p class="text-black text-justify">Our solutions are trusted by clients across continents,
-                    spanning various industries and sectors.
-                    We deliver world-class quality with a global perspective and a commitment to excellence.</p>
+          <!-- Transparent Communication -->
+          <div
+            class="bg-white border border-gray-200 rounded-2xl p-6 transition-transform hover:scale-105 hover:shadow-2xl border-2 border-[#015790]"
+          >
+            <div class="mb-4 text-indigo-600">
+              <i class="fa-solid fa-earth-americas text-5xl"></i>
             </div>
+            <h3 class="text-xl font-semibold mb-2">Globally Recognised</h3>
+            <p class="text-black text-justify">
+              Our solutions are trusted by clients across continents, spanning
+              various industries and sectors. We deliver world-class quality
+              with a global perspective and a commitment to excellence.
+            </p>
+          </div>
 
-            <!-- Full-Service Support -->
-            <div
-                class="bg-white border border-gray-200 rounded-2xl p-6 transition-transform hover:scale-105 hover:shadow-2xl border-2 border-[#015790]">
-                <div class="mb-4 text-indigo-600">
-                    <i class="fa-solid fa-headset text-5xl"></i>
-                </div>
-                <h3 class="text-xl font-semibold mb-2">Full-Service Support</h3>
-                <p class="text-black text-justify">We provide ongoing support to ensure your systems run
-                    smoothly, resolve issues quickly, and help you adapt as your needs evolve. Reliable, responsive,
-                    and always there when you need us.</p>
+          <!-- Full-Service Support -->
+          <div
+            class="bg-white border border-gray-200 rounded-2xl p-6 transition-transform hover:scale-105 hover:shadow-2xl border-2 border-[#015790]"
+          >
+            <div class="mb-4 text-indigo-600">
+              <i class="fa-solid fa-headset text-5xl"></i>
             </div>
-
+            <h3 class="text-xl font-semibold mb-2">Full-Service Support</h3>
+            <p class="text-black text-justify">
+              We provide ongoing support to ensure your systems run smoothly,
+              resolve issues quickly, and help you adapt as your needs evolve.
+              Reliable, responsive, and always there when you need us.
+            </p>
+          </div>
         </div>
-    </div>
-</section>
-
-
-
+      </div>
+    </section>
 
     <!-- Testimonials Section -->
     <section class="py-12 text-center">
-        <h2 class="text-3xl font-bold text-gray-900">What Our Cients Says</h2>
-        <p class="text-black mt-2">Hear from our satisfied customers about their experiences with our services.</p>
+      <h2 class="text-3xl font-bold text-gray-900">What Our Cients Says</h2>
+      <p class="text-black mt-2">
+        Hear from our satisfied customers about their experiences with our
+        services.
+      </p>
 
-        <div class="mt-10 container mx-auto px-6">
-            <div class="owl-carousel owl-theme">
-
-                <div class="bg-[#f0f6ff] p-8 rounded-lg shadow-md">
-                    <div class="text-yellow-400 flex mb-4">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-black italic mb-6">"Web Services India transformed our online presence completely.
-                        Their team understood our requirements perfectly and delivered a website that exceeded our
-                        expectations."</p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 rounded-full bg-gray-300 mr-4">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt=""
-                                class="w-full h-full rounded-full">
-                        </div>
-                        <div>
-                            <h4 class="font-bold">Amit Patel</h4>
-                            <p class="text-sm text-black">CEO, TechStart Solutions</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-[#f0f6ff] p-8 rounded-lg shadow-md">
-                    <div class="text-yellow-400 flex mb-4">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-black italic mb-6">"Their SEO strategies have significantly improved our online
-                        visibility and lead generation. We've seen a 200% increase in organic traffic within just six
-                        months."</p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 rounded-full bg-gray-300 mr-4">
-                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt=""
-                                class="w-full h-full rounded-full">
-                        </div>
-                        <div>
-                            <h4 class="font-bold">Sunita Sharma</h4>
-                            <p class="text-sm text-black">Marketing Manager, Global Retail</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-[#f0f6ff] p-8 rounded-lg shadow-md">
-                    <div class="text-yellow-400 flex mb-4">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-black italic mb-6">"The e-commerce platform they developed for us is robust,
-                        user-friendly, and has helped us increase our online sales by 150%. Their ongoing support is
-                        exceptional."</p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 rounded-full bg-gray-300 mr-4">
-                            <img src="https://randomuser.me/api/portraits/men/42.jpg" alt=""
-                                class="w-full h-full rounded-full">
-                        </div>
-                        <div>
-                            <h4 class="font-bold">Rahul Mehta</h4>
-                                    <p class="text-sm text-black">Founder, Fashion Forward</p>
-                        </div>
-                    </div>
-                </div>
-
+      <div class="mt-10 container mx-auto px-6">
+        <div class="owl-carousel owl-theme">
+          <div class="bg-[#f0f6ff] p-8 rounded-lg shadow-md">
+            <div class="text-yellow-400 flex mb-4">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </div>
+            <p class="text-black italic mb-6">
+              "Web Services India transformed our online presence completely.
+              Their team understood our requirements perfectly and delivered a
+              website that exceeded our expectations."
+            </p>
+            <div class="flex items-center">
+              <div class="w-12 h-12 rounded-full bg-gray-300 mr-4">
+                <img
+                  src="https://randomuser.me/api/portraits/men/32.jpg"
+                  alt=""
+                  class="w-full h-full rounded-full"
+                />
+              </div>
+              <div>
+                <h4 class="font-bold">Amit Patel</h4>
+                <p class="text-sm text-black">CEO, TechStart Solutions</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-[#f0f6ff] p-8 rounded-lg shadow-md">
+            <div class="text-yellow-400 flex mb-4">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="text-black italic mb-6">
+              "Their SEO strategies have significantly improved our online
+              visibility and lead generation. We've seen a 200% increase in
+              organic traffic within just six months."
+            </p>
+            <div class="flex items-center">
+              <div class="w-12 h-12 rounded-full bg-gray-300 mr-4">
+                <img
+                  src="https://randomuser.me/api/portraits/women/32.jpg"
+                  alt=""
+                  class="w-full h-full rounded-full"
+                />
+              </div>
+              <div>
+                <h4 class="font-bold">Sunita Sharma</h4>
+                <p class="text-sm text-black">
+                  Marketing Manager, Global Retail
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-[#f0f6ff] p-8 rounded-lg shadow-md">
+            <div class="text-yellow-400 flex mb-4">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="text-black italic mb-6">
+              "The e-commerce platform they developed for us is robust,
+              user-friendly, and has helped us increase our online sales by
+              150%. Their ongoing support is exceptional."
+            </p>
+            <div class="flex items-center">
+              <div class="w-12 h-12 rounded-full bg-gray-300 mr-4">
+                <img
+                  src="https://randomuser.me/api/portraits/men/42.jpg"
+                  alt=""
+                  class="w-full h-full rounded-full"
+                />
+              </div>
+              <div>
+                <h4 class="font-bold">Rahul Mehta</h4>
+                <p class="text-sm text-black">Founder, Fashion Forward</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Contact CTA -->
@@ -575,141 +976,225 @@
     <!-- footer  Section -->
     <!-- footer  Section -->
     <footer class="footer-bg text-gray-300 py-10 px-6 bg-[#001f23]">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-
-            <!-- About Company -->
-            <div>
-                <h3 class="text-white font-semibold text-2xl">Web Solutions</h3>
-                <p class="mt-2 text-sm">
-                    We are honoured as the leading web designing company in the region and
-                    thus offer superior quality work to our clients.
-                </p>
-                <a href="about-us.html" class="text-white mt-2 inline-block text-sm hover:text-teal-500">Read
-                    More</a>
-            </div>
-            <!-- Company Links -->
-            <div>
-                <h3 class="text-white font-semibold text-lg">Quick Links</h3>
-                <ul class="mt-2 space-y-2 text-lg  ">
-                    <li class="hover:underline"><i class="fa fa-angle-double-right text-white  " aria-hidden="true"></i> <a href="/"
-                            class="hover:text-teal-500">Home</a></li>
-                    <li class="hover:underline"><i class="fa fa-angle-double-right text-white  " aria-hidden="true"></i> <a href="about-us.html"
-                            class="hover:text-teal-500">About Us</a></li>
-                    <li class="hover:underline"><i class="fa fa-angle-double-right text-white  " aria-hidden="true"></i> <a href="contact-us.html"
-                            class="hover:text-teal-500">Contact Us</a></li>
-                    <li class="hover:underline"><i class="fa fa-angle-double-right text-white  " aria-hidden="true"></i> <a href="packages.html"
-                            class="hover:text-teal-500">Packages</a></li>
-                </ul>
-            </div>
-
-            <!-- Our Services -->
-            <div>
-                <h3 class="text-white font-semibold text-lg">Our Services</h3>
-                <ul class="mt-2 space-y-2 text-sm">
-                    <li><i class="fa fa-angle-double-right text-white" aria-hidden="true"></i> <a href="services/design.html"
-                            class="hover:text-teal-500 text-lg hover:underline"> Design</a></li>
-                    <li><i class="fa fa-angle-double-right text-white" aria-hidden="true"></i> <a href="services/development.html"
-                            class="hover:text-teal-500 text-lg hover:underline  ">Development</a></li>
-                    <li><i class="fa fa-angle-double-right text-white" aria-hidden="true"></i> <a href="services/digital-marketing.html"
-                            class="hover:text-teal-500 text-lg hover:underline  "> Digital Marketing</a></li>
-                    <!-- <li><i class="fa fa-angle-double-right text-white" aria-hidden="true"></i>      <a href="#" class="hover:text-teal-500">Search Engine Optimization</a></li> -->
-                </ul>
-            </div>
-
-
-            <!-- Contact Information -->
-            <div>
-                <h3 class="text-white font-semibold text-lg">Contact Us</h3>
-                <ul class="mt-2 space-y-2 text-sm">
-                    <li>     <i class="fas fa-house text-white text-sm"></i>
-                        B-609, Logix Technova, Sec-132, Noida, (UP) 201304, India</li>
-                    <li>    <i class="fas fa-phone text-white text-sm"></i>
-                        +91 120 4310900,  +91 92 12378780</li>
-                    <li>    
-                    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:sales@skynetiks.com" class="hover:text-teal-500">sales@skynetiks.com</a></li>
-                </ul>
-                <!-- Social Icons -->
-                <div class="flex space-x-3 mt-4">
-                   <a href="https://www.facebook.com/skynetikstech" target="_blank" class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center hover:bg-teal-500 transition text-white text-xl">
-                      <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.youtube.com/@skynetikstech" target="_blank" class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center hover:bg-teal-500 transition text-white text-xl">
-                        <i class="fa-brands fa-youtube"></i>
-                      </a>
-                    <a href="https://www.instagram.com/skynetikstech/#" target="_blank" class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center hover:bg-teal-500 transition text-white text-xl">
-                      <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/company/skynetikstech/?trk=public_profile_topcard-current-company&originalSubdomain=in" target="_blank" class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center hover:bg-teal-500 transition text-white text-xl">
-                      <i class="fab fa-linkedin-in"></i>
-                    </a>
-                  </div>
-                  
-            </div>
-
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- About Company -->
+        <div>
+          <h3 class="text-white font-semibold text-2xl">Web Solutions</h3>
+          <p class="mt-2 text-sm">
+            We are honoured as the leading web designing company in the region
+            and thus offer superior quality work to our clients.
+          </p>
+          <a
+            href="about-us.html"
+            class="text-white mt-2 inline-block text-sm hover:text-teal-500"
+            >Read More</a
+          >
+        </div>
+        <!-- Company Links -->
+        <div>
+          <h3 class="text-white font-semibold text-lg">Quick Links</h3>
+          <ul class="mt-2 space-y-2 text-lg">
+            <li class="hover:underline">
+              <i
+                class="fa fa-angle-double-right text-white"
+                aria-hidden="true"
+              ></i>
+              <a href="/" class="hover:text-teal-500">Home</a>
+            </li>
+            <li class="hover:underline">
+              <i
+                class="fa fa-angle-double-right text-white"
+                aria-hidden="true"
+              ></i>
+              <a href="about-us.html" class="hover:text-teal-500">About Us</a>
+            </li>
+            <li class="hover:underline">
+              <i
+                class="fa fa-angle-double-right text-white"
+                aria-hidden="true"
+              ></i>
+              <a href="contact-us.html" class="hover:text-teal-500"
+                >Contact Us</a
+              >
+            </li>
+            <li class="hover:underline">
+              <i
+                class="fa fa-angle-double-right text-white"
+                aria-hidden="true"
+              ></i>
+              <a href="packages.html" class="hover:text-teal-500">Packages</a>
+            </li>
+          </ul>
         </div>
 
-         <!-- Bottom Footer -->
-         <div
-         class="mt-10 border-t border-gray-700 pt-4 flex flex-col md:flex-row justify-center items-center gap-4 text-gray-400  text-center">
-         <p class="text-white">© Copyright 2003-2025 <a href="https://skynetiks.com/" target="_blank"> <span
-                     class="hover:underline">Skynetiks Technologies Pvt. Ltd.</span></a> All Rights Reserved.</p>
-         <a href="#top" id="backToTopBtn"
-             class="hidden fixed bottom-6 left-6 bg-teal-500 hover:bg-teal-600 text-white px-5 py-4 rounded-full shadow-lg transition duration-300 z-50 text-xl"
-             title="Back to top">
-             <i class="fa-regular fa-circle-up"></i>
-         </a>
+        <!-- Our Services -->
+        <div>
+          <h3 class="text-white font-semibold text-lg">Our Services</h3>
+          <ul class="mt-2 space-y-2 text-sm">
+            <li>
+              <i
+                class="fa fa-angle-double-right text-white"
+                aria-hidden="true"
+              ></i>
+              <a
+                href="services/design.html"
+                class="hover:text-teal-500 text-lg hover:underline"
+              >
+                Design</a
+              >
+            </li>
+            <li>
+              <i
+                class="fa fa-angle-double-right text-white"
+                aria-hidden="true"
+              ></i>
+              <a
+                href="services/development.html"
+                class="hover:text-teal-500 text-lg hover:underline"
+                >Development</a
+              >
+            </li>
+            <li>
+              <i
+                class="fa fa-angle-double-right text-white"
+                aria-hidden="true"
+              ></i>
+              <a
+                href="services/digital-marketing.html"
+                class="hover:text-teal-500 text-lg hover:underline"
+              >
+                Digital Marketing</a
+              >
+            </li>
+            <!-- <li><i class="fa fa-angle-double-right text-white" aria-hidden="true"></i>      <a href="#" class="hover:text-teal-500">Search Engine Optimization</a></li> -->
+          </ul>
+        </div>
 
-     </div>
+        <!-- Contact Information -->
+        <div>
+          <h3 class="text-white font-semibold text-lg">Contact Us</h3>
+          <ul class="mt-2 space-y-2 text-sm">
+            <li>
+              <i class="fas fa-house text-white text-sm"></i> B-609, Logix
+              Technova, Sec-132, Noida, (UP) 201304, India
+            </li>
+            <li>
+              <i class="fas fa-phone text-white text-sm"></i> +91 120 4310900,
+              +91 92 12378780
+            </li>
+            <li></li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:sales@skynetiks.com" class="hover:text-teal-500"
+                >sales@skynetiks.com</a
+              >
+            </li>
+          </ul>
+          <!-- Social Icons -->
+          <div class="flex space-x-3 mt-4">
+            <a
+              href="https://www.facebook.com/skynetikstech"
+              target="_blank"
+              class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center hover:bg-teal-500 transition text-white text-xl"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/@skynetikstech"
+              target="_blank"
+              class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center hover:bg-teal-500 transition text-white text-xl"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/skynetikstech/#"
+              target="_blank"
+              class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center hover:bg-teal-500 transition text-white text-xl"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/skynetikstech/?trk=public_profile_topcard-current-company&originalSubdomain=in"
+              target="_blank"
+              class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center hover:bg-teal-500 transition text-white text-xl"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
 
-     <a href="https://wa.me/919212378780" target="_blank" aria-label="Chat on WhatsApp"
-     class="fixed bottom-5 left-5 z-50 w-16 h-16 bg-green-500 text-white rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-transform duration-300">
-     <i class="fab fa-whatsapp text-3xl"></i>
- </a>
+      <!-- Bottom Footer -->
+      <div
+        class="mt-10 border-t border-gray-700 pt-4 flex flex-col md:flex-row justify-center items-center gap-4 text-gray-400 text-center"
+      >
+        <p class="text-white">
+          © Copyright 2003-2025
+          <a href="https://skynetiks.com/" target="_blank">
+            <span class="hover:underline"
+              >Skynetiks Technologies Pvt. Ltd.</span
+            ></a
+          >
+          All Rights Reserved.
+        </p>
+        <a
+          href="#top"
+          id="backToTopBtn"
+          class="hidden fixed bottom-6 left-6 bg-teal-500 hover:bg-teal-600 text-white px-5 py-4 rounded-full shadow-lg transition duration-300 z-50 text-xl"
+          title="Back to top"
+        >
+          <i class="fa-regular fa-circle-up"></i>
+        </a>
+      </div>
 
-       
+      <a
+        href="https://wa.me/919212378780"
+        target="_blank"
+        aria-label="Chat on WhatsApp"
+        class="fixed bottom-5 left-5 z-50 w-16 h-16 bg-green-500 text-white rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-transform duration-300"
+      >
+        <i class="fab fa-whatsapp text-3xl"></i>
+      </a>
     </footer>
-
 
     <script src="main.js"></script>
     <!-- jQuery & Owl Carousel Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-      <!--Start of Tawk.to Script-->
-      <script type="text/javascript">
-        var Tawk_API = Tawk_API || {},
-          Tawk_LoadStart = new Date();
-        (function () {
-          var s1 = document.createElement("script"),
-            s0 = document.getElementsByTagName("script")[0];
-          s1.async = true;
-          s1.src = "https://embed.tawk.to/67f75b2f09f0b7190b51a67b/1iof3od57";
-          s1.charset = "UTF-8";
-          s1.setAttribute("crossorigin", "*");
-          s0.parentNode.insertBefore(s1, s0);
-        })();
-      </script>
-      <!--End of Tawk.to Script-->
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/67f75b2f09f0b7190b51a67b/1iof3od57";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
 
     <!-- Owl Carousel Initialization -->
     <script>
-        $(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
-                loop: true,
-                margin: 20,
-                nav: false,
-                dots: true,
-                autoplay: true,
-                autoplayTimeout: 3000,
-                responsive: {
-                    0: { items: 1 },
-                    768: { items: 2 },
-                    1024: { items: 3 }
-                }
-            });
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 20,
+          nav: false,
+          dots: true,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          responsive: {
+            0: { items: 1 },
+            768: { items: 2 },
+            1024: { items: 3 },
+          },
         });
+      });
     </script>
-
-</body>
-
+  </body>
 </html>
