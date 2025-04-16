@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Main Pages -->
   <url>
     <loc>https://webservicesindia.info/</loc>
     <lastmod>2025-04-10</lastmod>
@@ -26,7 +25,6 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Service Category Pages -->
   <url>
     <loc>https://webservicesindia.info/services/design.html</loc>
     <lastmod>2025-04-10</lastmod>
@@ -46,7 +44,6 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- Design Services -->
   <url>
     <loc>https://webservicesindia.info/services/design/website-design.html</loc>
     <lastmod>2025-04-10</lastmod>
@@ -84,7 +81,6 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Development Services -->
   <url>
     <loc>https://webservicesindia.info/services/development/web-development.html</loc>
     <lastmod>2025-04-10</lastmod>
@@ -128,7 +124,6 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Digital Marketing Services -->
   <url>
     <loc>https://webservicesindia.info/services/digital-marketing/search-engine-optimization.html</loc>
     <lastmod>2025-04-10</lastmod>

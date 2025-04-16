@@ -196,3 +196,10 @@ html, body {
       100% { transform: rotate(360deg); }
     }
 
+
+
+
+    .filterSwiper {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
